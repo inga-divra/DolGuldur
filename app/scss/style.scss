@@ -2,4 +2,145 @@
 @import 'vars';
 @import 'fonts';
 @import 'global';
+
+.header {
+    height: 80px;
+    padding: 22px 0;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 50px;
+    }
+
+    &__contact {
+        display: flex;
+    }
+
+    &__contact-item:not(:first-child) {
+        margin-left: 45px;
+    }
+}
+
+.hero {
+    background-color: black;
+    height: 100vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 696px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        display: block;
+    }
+}
+
+.about {
+    background-color: #fff;
+    padding: 94px 0;
+
+    &__items {
+        display: flex;
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    &__item-title {
+        color: #000;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 9px;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.services {
+    padding-top: 0;
+    padding-bottom: 94px;
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.team {
+    background-color: #F5F4FA;
+
+    &__members {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__member {
+        text-align: center;
+        line-height: 1.2;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    &__member-name {
+        color: #212121;
+
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+
+    &__member-role {
+        padding-bottom: 30px;
+    }
+}
+
+.footer {
+    background-color: #000;
+    padding: 64px 0 60px;
+
+    &__logo {
+        margin-bottom: 23px;
+    }
+
+    &__contact {
+        line-height: 1.2;
+    }
+
+    &__contact-item:not(:last-child) {
+        color: #fff;
+        margin-bottom: 9px;
+    }
+}
+
 @import 'media';
