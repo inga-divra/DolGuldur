@@ -106,19 +106,40 @@
         justify-content: space-between;
     }
 
-    &__card-title {
+    &__card {
+        position: relative;
 
-        color: $orange;
-        border: 1px solid red;
+
+    }
+
+    &__card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 77%;
+        background-color: $dark-grey;
+        opacity: 0.6;
+
+
+    }
+
+    &__card-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: $white;
         text-transform: uppercase;
         padding: 25px 0;
         text-align: center;
-
+        z-index: 2;
     }
 }
 
 .team {
-    background-color: #F5F4FA;
+    background-color: $light-grey;
 
     &__members {
         display: flex;
