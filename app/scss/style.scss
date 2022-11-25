@@ -35,10 +35,36 @@
         margin-left: 45px;
     }
 
+    &__contact-item {
+        position: relative;
+    }
+
+    &__contact-details--envelope::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 12px;
+        top: 7px;
+        left: -25px;
+        background-image: url("../images/icons/envelope.svg");
+    }
+
+    &__contact-details--phone::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 16px;
+        top: 5px;
+        left: -20px;
+        background-image: url("../images/icons/phone.svg");
+    }
+
     &__contact-details {
         color: $grey;
         line-height: 1.2;
-
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
