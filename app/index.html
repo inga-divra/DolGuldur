@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The official website of digital agency Dolguldur</title>
+    <title>The official website of digital agency DolGuldur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -14,11 +18,12 @@
         <div class="container">
             <nav class="menu">
                 <a class="logo" href="#">
-                    <img class="logo__img" src="./images/logo.svg" alt="company logo">
+                    <img class="logo__img" src="./images/logo.svg" alt="digital agency DolGuldur logo" width="189"
+                        height="36">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Home</a>
+                        <a class="menu__link current" href="#">Home</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="#">Our Works</a>
@@ -27,21 +32,19 @@
                         <a class="menu__link" href="#">Contacts</a>
                     </li>
                 </ul>
-                <ul class="menu__contact">
-                    <li class="menu__contact-item ">
-                        <a class="menu__contact-details menu__contact-details--envelope"
-                            href="mailto:info@dolguldur.com">info@dolguldur.com
-                            <span class="sr-only">contact by email</span>
-                        </a>
-                    </li>
-                    <li class="menu__contact-item ">
-                        <a class="menu__contact-details menu__contact-details--phone" href="tel:+380961111111">
-                            +38 096 111 11 11
-                            <span class="sr-only">contact by phone</span>
-                        </a>
-                    </li>
-                </ul>
             </nav>
+            <ul class="menu__contact">
+                <li class="menu__contact-item ">
+                    <a class="menu__contact-details menu__contact-details--envelope"
+                        href="mailto:info@dolguldur.com">info@dolguldur.com
+                    </a>
+                </li>
+                <li class="menu__contact-item ">
+                    <a class="menu__contact-details menu__contact-details--phone" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -61,24 +64,32 @@
                 <h2 class="sr-only">The main characteristics of Dolguldur digital agency</h2>
                 <ul class="about__items">
                     <li class="about__item">
-                        <p class="about__item-title">Effective team</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt.</p>
+                        <h3 class="about__item-title">Effective team</h3>
+                        <p class="about__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.
+                        </p>
                     </li>
                     <li class="about__item">
-                        <p class="about__item-title">Punctuality</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt.</p>
+                        <h3 class="about__item-title">Punctuality</h3>
+                        <p class="about__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.
+                        </p>
                     </li>
                     <li class="about__item">
-                        <p class="about__item-title">Planning</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt.</p>
+                        <h3 class="about__item-title">Planning</h3>
+                        <p class="about__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.
+                        </p>
                     </li>
                     <li class="about__item">
-                        <p class="about__item-title">Innovation</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt.</p>
+                        <h3 class="about__item-title">Innovation</h3>
+                        <p class="about__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -88,19 +99,20 @@
                 <h2 class="title">Our services</h2>
                 <ul class="services__cards">
                     <li class="services__card">
-                        <img class="services__card-img" src="./images/desctop_apps.jpg" alt="dectop apps" width="370px"
-                            height="294px">
-                        <p class="services__card-title">desktop apps</p>
+                        <h3 class="services__card-title">desktop apps</h3>
+                        <img class="services__card-img" src="./images/desctop_apps.jpg"
+                            alt="pc and laptop on wooden desk" width="370px" height="294px">
                     </li>
                     <li class="services__card">
-                        <img class="services__card-img" src="./images/mobile_apps.jpg" alt="mobile apps" width="370px"
-                            height="294px">
-                        <p class="services__card-title">mobile apps</p>
+                        <h3 class="services__card-title">mobile apps</h3>
+                        <img class="services__card-img" src="./images/mobile_apps.jpg"
+                            alt="woman hands holding smartphone" width="370px" height="294px">
                     </li>
                     <li class="services__card">
-                        <img class="services__card-img" src="./images/modern_design.jpg" alt="modern design"
-                            width="370px" height="294px">
-                        <p class="services__card-title">modern design</p>
+                        <h3 class="services__card-title">modern design</h3>
+                        <img class="services__card-img" src="./images/modern_design.jpg"
+                            alt="box of colored pencils and hand holding pencil ready to start drawing" width="370px"
+                            height="294px">
                     </li>
                 </ul>
             </div>
@@ -110,27 +122,27 @@
                 <h2 class="title">Our team</h2>
                 <ul class="team__members">
                     <li class="team__member">
-                        <img class="team__member-img" src="./images/paul_castanie.jpg" alt="team worker image"
-                            width="270px" height="260px">
-                        <p class="team__member-name">Paul Castanie</p>
+                        <img class="team__member-img" src="./images/paul_castanie.jpg"
+                            alt="Paul Castanie Product designer" width="270px" height="260px">
+                        <h3 class="team__member-name">Paul Castanie</h3>
                         <p class="team__member-role">Product Designer</p>
                     </li>
                     <li class="team__member">
-                        <img class="team__member-img" src="./images/joanna_nix.jpg" alt="team worker image"
+                        <img class="team__member-img" src="./images/joanna_nix.jpg" alt="Joanna Nix Frontend Developer"
                             width="270px" height="260px">
-                        <p class="team__member-name">Joanna Nix</p>
+                        <h3 class="team__member-name">Joanna Nix</h3>
                         <p class="team__member-role">Frontend Developer</p>
                     </li>
                     <li class="team__member">
-                        <img class="team__member-img" src="./images/aldo_delara.jpg" alt="team worker image"
-                            width="270px" height="260px">
-                        <p class="team__member-name">Aldo Delara</p>
+                        <img class="team__member-img" src="./images/aldo_delara.jpg"
+                            alt="Aldo Delara Marketing specialist" width="270px" height="260px">
+                        <h3 class="team__member-name">Aldo Delara</h3>
                         <p class="team__member-role">Marketing</p>
                     </li>
                     <li class="team__member">
-                        <img class="team__member-img" src="./images/oladimeji_odunsi.jpg" alt="team worker image"
-                            width="270px" height="260px">
-                        <p class="team__member-name">Oladimeji Odunsi</p>
+                        <img class="team__member-img" src="./images/oladimeji_odunsi.jpg"
+                            alt="Oladimeji Odunsi Ui designer" width="270px" height="260px">
+                        <h3 class="team__member-name">Oladimeji Odunsi</h3>
                         <p class="team__member-role">UI Designer</p>
                     </li>
                 </ul>
@@ -139,10 +151,11 @@
     </main>
 
     <footer class="footer">
-        <div class="container"><a class="logo" href="#">
-                <img class="footer__logo" src="./images/logo_footer.png" alt="company logo">
+        <div class="container">
+            <a class="logo" href="#">
+                <img class="footer__logo" src="./images/logo__footer.svg" alt="digital agency DolGuldur logo">
             </a>
-            <ul class="footer__contact">
+            <address class="footer__contact">
                 <li class="footer__contact-item">
                     14 Green St., Belmont, Boston. USA
                 </li>
@@ -152,7 +165,7 @@
                 <li class="footer__contact-item">
                     <a class="footer__contact-details" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
-            </ul>
+            </address>
         </div>
     </footer>
     <script src="./js/main.min.js"></script>
