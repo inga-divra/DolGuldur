@@ -1,0 +1,26 @@
+.footer {
+    background-color: $primaryDark;
+    padding: 64px 0 60px;
+
+    &__contact {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.2;
+
+        &-address {
+            color: $neutral;
+            margin-bottom: 9px;
+        }
+
+        &-item {
+            color: $accentLight;
+
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+    }
+}
+
+.logo-footer {
+    margin-bottom: 23px;
+}

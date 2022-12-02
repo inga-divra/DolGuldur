@@ -2,88 +2,13 @@
 /* @import 'libs'; */
 @import 'vars';
 @import 'global';
-
 @import './components/header';
+@import './components/footer';
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: 0.02em;
-
-    &__list {
-        display: flex;
-    }
-
-    &__item:not(:first-child) {
-        margin-left: 50px;
-    }
-
-    &__link {
-        position: relative;
-        color: inherit;
-    }
-
-    &__link:hover {
-        color: $orange;
-    }
-
-    &__link:hover::before {
-        content: "";
-        position: absolute;
-        bottom: -29px;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: $orange;
-        border-radius: 2px;
-        transition: 0.3s;
-    }
-
-    &__contact {
-        display: flex;
-    }
-
-    &__contact-item:not(:first-child) {
-        margin-left: 65px;
-    }
-
-    &__contact-item {
-        position: relative;
-    }
-
-    &__contact-details--envelope::before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 12px;
-        top: 7px;
-        left: -25px;
-        background-image: url("../images/icons/envelope.svg");
-    }
-
-    &__contact-details--phone::before {
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 16px;
-        top: 5px;
-        left: -20px;
-        background-image: url("../images/icons/phone.svg");
-    }
-
-    &__contact-details {
-        color: $grey;
-        line-height: 1.2;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-}
 
 .hero {
-    background-color: $black;
-    height: 100vh;
+    padding: 200px 0;
+    background-color: $primaryDark;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +18,7 @@
     }
 
     &__title {
-        color: $white;
+        color: $neutral;
         font-size: 44px;
         font-weight: 700;
         line-height: 1.4;
@@ -101,7 +26,6 @@
         text-transform: uppercase;
         text-align: center;
         max-width: 696px;
-        width: 100%;
         margin-bottom: 30px;
     }
 
@@ -111,31 +35,34 @@
 }
 
 .about {
-    padding: 94px 0;
 
     &__items {
         display: flex;
-        color: $grey;
-        font-size: 14px;
-        line-height: 1.7;
     }
 
-    &__item:not(:first-child) {
-        margin-left: 30px;
+    &__item {
+        font-size: 14px;
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
     }
 
     &__item-title {
-        color: $light-black;
         font-weight: 700;
         line-height: 1.2;
         text-transform: uppercase;
         margin-bottom: 9px;
     }
+
+    &__item-text {
+        color: $primaryLight;
+        line-height: 1.7;
+    }
 }
 
 .services {
     padding-top: 0;
-    padding-bottom: 94px;
 
     &__cards {
         display: flex;
@@ -144,25 +71,19 @@
 
     &__card {
         position: relative;
-    }
 
-    &__card::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 77%;
-        background-color: $dark-grey;
-        opacity: 0.6;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
     &__card-title {
         position: absolute;
         bottom: 0;
         left: 0;
-        right: 0;
-        color: $white;
+        width: 100%;
+        color: $neutral;
+        background-color: rgba($secondary, 0.6);
         text-transform: uppercase;
         padding: 25px 0;
         text-align: center;
@@ -171,7 +92,7 @@
 }
 
 .team {
-    background-color: $light-grey;
+    background-color: $neutralLighter;
 
     &__members {
         display: flex;
@@ -181,41 +102,76 @@
     &__member {
         text-align: center;
         line-height: 1.2;
-        border-radius: 0px 0px 4px 4px;
+        border-radius: 0 0 4px 4px;
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &-content {
+            padding: 29px 15px 30px;
+        }
     }
 
     &__member-name {
-        padding-top: 35px;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     &__member-role {
-        @extend %roboto;
-        color: $grey;
-        padding-bottom: 30px;
+        font-family: 'Roboto', sans-serif;
+        color: $primaryLight;
     }
 }
 
-.footer {
-    background-color: $black;
-    padding: 64px 0 60px;
+.portfolio {
+    background-color: $neutralLightest;
 
-    &__logo {
-        margin-bottom: 23px;
+    &__filter {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
     }
 
-    &__contact {
-        @extend %roboto;
-        line-height: 1.2;
+    &__item:not(:last-child) {
+        margin-right: 10px;
     }
 
-    &__contact-details {
-        color: $orange;
+    &__btn {
+        padding: 11px 26px;
+        background-color: $neutralLighter;
+        line-height: 1;
+        border-radius: 4px;
+        transition: color 0.4s, background-color 0.4s, box-shaddow 0.4s;
+
+        &:hover {
+            color: $neutral;
+            background-color: $accent;
+            box-shadow: 1px 3px 1px rgba($primaryDarker, 0.1);
+        }
     }
 
-    &__contact-item:not(:last-child) {
-        color: #fff;
-        margin-bottom: 9px;
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__category-desc {
+        background-color: $neutral;
+        padding: 20px 24px;
+        border: 1px solid $primaryLight;
+        border-top: transparent;
+        line-height: 2;
+    }
+
+    &__category-title {
+        font-size: 18px;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+    }
+
+    &__category-text {
+        color: $primaryLight;
     }
 }

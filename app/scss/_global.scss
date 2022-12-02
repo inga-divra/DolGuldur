@@ -1,5 +1,6 @@
 body {
-    color: $light-black;
+    color: $primary;
+    background-color: $neutral;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
@@ -15,29 +16,27 @@ body {
 
 .section {
     padding: 94px 0;
-    background-color: $white;
+}
+
+.logo {
+    display: block;
 }
 
 .title {
-    color: $light-black;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 49px;
-    font-weight: inherit;
 }
 
 .btn {
-    color: $white;
-    background-color: $orange;
+    color: $neutral;
+    background-color: $accent;
     font-weight: 700;
-    line-height: 1.8;
     letter-spacing: 0.06em;
     padding: 10px 50px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    outline: transparent;
 }
 
 .sr-only {

@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
-<body>
+<body id="body" class="body">
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="menu">
-                <a class="logo" href="#">
+                <a class="logo logo-menu" href="#body">
                     <img class="logo__img" src="./images/logo.svg" alt="digital agency DolGuldur logo" width="189"
                         height="36">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link current" href="#">Home</a>
+                        <a class="menu__link current" href="index.html">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Our Works</a>
+                        <a class="menu__link" href="works.html">Our Works</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">Contacts</a>
+                        <a class="menu__link" href="#footer">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -49,7 +49,7 @@
     </header>
 
     <main>
-        <section class="hero section">
+        <section class="hero">
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title">author's forge where
@@ -124,47 +124,63 @@
                     <li class="team__member">
                         <img class="team__member-img" src="./images/paul_castanie.jpg"
                             alt="Paul Castanie Product designer" width="270px" height="260px">
-                        <h3 class="team__member-name">Paul Castanie</h3>
-                        <p class="team__member-role">Product Designer</p>
+                        <div class="team__member-content">
+                            <h3 class="team__member-name">Paul Castanie</h3>
+                            <p class="team__member-role">
+                                Product Designer
+                            </p>
+                        </div>
                     </li>
                     <li class="team__member">
                         <img class="team__member-img" src="./images/joanna_nix.jpg" alt="Joanna Nix Frontend Developer"
                             width="270px" height="260px">
-                        <h3 class="team__member-name">Joanna Nix</h3>
-                        <p class="team__member-role">Frontend Developer</p>
+                        <div class="team__member-content">
+                            <h3 class="team__member-name">Joanna Nix</h3>
+                            <p class="team__member-role">
+                                Frontend Developer
+                            </p>
+                        </div>
                     </li>
                     <li class="team__member">
                         <img class="team__member-img" src="./images/aldo_delara.jpg"
                             alt="Aldo Delara Marketing specialist" width="270px" height="260px">
-                        <h3 class="team__member-name">Aldo Delara</h3>
-                        <p class="team__member-role">Marketing</p>
+                        <div class="team__member-content">
+                            <h3 class="team__member-name">Aldo Delara</h3>
+                            <p class="team__member-role">
+                                Marketing
+                            </p>
+                        </div>
                     </li>
                     <li class="team__member">
                         <img class="team__member-img" src="./images/oladimeji_odunsi.jpg"
                             alt="Oladimeji Odunsi Ui designer" width="270px" height="260px">
-                        <h3 class="team__member-name">Oladimeji Odunsi</h3>
-                        <p class="team__member-role">UI Designer</p>
+                        <div class="team__member-content">
+                            <h3 class="team__member-name">Oladimeji Odunsi</h3>
+                            <p class="team__member-role">
+                                UI Designer
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
-            <a class="logo" href="#">
-                <img class="footer__logo" src="./images/logo__footer.svg" alt="digital agency DolGuldur logo">
+            <a class="logo logo-footer" href="#body">
+                <img class="logo__img" src="./images/logo_footer.svg" alt="digital agency DolGuldur logo">
             </a>
             <address class="footer__contact">
-                <li class="footer__contact-item">
+                <p class="footer__contact-address">
                     14 Green St., Belmont, Boston. USA
-                </li>
-                <li class="footer__contact-item">
+                </p>
+                <p class="footer__contact-item">
                     <a class="footer__contact-details" href="mailto:info@dolguldur.com">info@dolguldur.com sty</a>
-                </li>
-                <li class="footer__contact-item">
+                </p>
+                <p class="footer__contact-item">
                     <a class="footer__contact-details" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
+                </p>
             </address>
         </div>
     </footer>
