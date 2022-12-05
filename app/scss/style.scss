@@ -43,8 +43,8 @@
     &__item {
         font-size: 14px;
 
-        &:not(:first-child) {
-            margin-left: 30px;
+        &:not(:last-child) {
+            margin-right: 30px;
         }
     }
 
@@ -108,10 +108,10 @@
         &:not(:last-child) {
             margin-right: 30px;
         }
+    }
 
-        &-content {
-            padding: 29px 15px 30px;
-        }
+    &__member-content {
+        padding: 29px 15px 30px;
     }
 
     &__member-name {
@@ -142,7 +142,7 @@
         background-color: $neutralLighter;
         line-height: 1;
         border-radius: 4px;
-        transition: color 0.4s, background-color 0.4s, box-shaddow 0.4s;
+        transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
 
         &:hover {
             color: $neutral;
