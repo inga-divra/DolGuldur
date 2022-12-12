@@ -1,0 +1,29 @@
+.services {
+    padding-top: 0;
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__card-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: $neutral;
+        background-color: rgba($secondary, 0.6);
+        text-transform: uppercase;
+        padding: 25px 0;
+        text-align: center;
+        z-index: 2;
+    }
+}

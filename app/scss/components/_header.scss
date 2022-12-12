@@ -1,5 +1,4 @@
 .header {
-    padding-top: 8px;
     border-bottom: 1px solid $neutralLight;
 
     &__container {
@@ -23,22 +22,20 @@
         display: flex;
     }
 
-    &__item {
-        padding: 24px 0;
-    }
-
     &__item:not(:last-child) {
         margin-right: 50px;
     }
 
     &__link {
+        display: block;
+        padding: 32px 0 29px;
         position: relative;
         transition: color 0.4s;
 
         &:before {
             content: "";
             position: absolute;
-            bottom: -25px;
+            bottom: 0;
             left: 50%;
             width: 0;
             height: 4px;
@@ -47,7 +44,8 @@
             transition: width 0.4s, left 0.4s;
         }
 
-        &:hover {
+        &:hover,
+        &.current {
             color: $accent;
 
             &:before {

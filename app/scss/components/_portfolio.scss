@@ -1,0 +1,52 @@
+.portfolio {
+
+    &__filter {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    &__filter-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__btn {
+        padding: 11px 26px;
+        background-color: $neutralLighter;
+        line-height: 1;
+        border-radius: 4px;
+        transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
+
+        &:hover {
+            color: $neutral;
+            background-color: $accent;
+            box-shadow: 1px 3px 1px rgba($primaryDarker, 0.1);
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .card {
+        &__desc {
+            padding: 20px 24px;
+            border: 1px solid $primaryLight;
+            border-top: none;
+            line-height: 2;
+        }
+
+        &__title {
+            font-size: 18px;
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
+        }
+
+        &__text {
+            color: $primaryLight;
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+.team {
+    background-color: $neutralLighter;
+
+    &__members {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__member {
+        text-align: center;
+        line-height: 1.2;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__member-content {
+        padding: 29px 15px 30px;
+    }
+
+    &__member-name {
+        margin-bottom: 10px;
+    }
+
+    &__member-role {
+        font-family: 'Roboto', sans-serif;
+        color: $primaryLight;
+    }
+}

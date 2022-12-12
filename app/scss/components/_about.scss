@@ -1,0 +1,26 @@
+.about {
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        font-size: 14px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__item-title {
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 9px;
+    }
+
+    &__item-text {
+        color: $primaryLight;
+        line-height: 1.7;
+    }
+}
