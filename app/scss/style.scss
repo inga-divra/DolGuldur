@@ -9,3 +9,18 @@
 @import './components/services';
 @import './components/team';
 @import './components/portfolio';
+
+.box {
+    max-width: 70%;
+    padding-top: 200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.icon {
+    fill: red;
+
+    &:hover {
+        fill: aqua;
+    }
+}

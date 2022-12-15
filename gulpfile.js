@@ -4,9 +4,10 @@ const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin')
-const del = require('del')
+const imagemin = require('gulp-imagemin');
+const del = require('del');
 const browserSync = require('browser-sync').create();
+
 
 function browsersync() {
     browserSync.init({
@@ -55,6 +56,7 @@ function images() {
         ]))
         .pipe(dest('./dist/images'))
 }
+
 
 function build() {
     return src([

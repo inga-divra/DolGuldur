@@ -6,11 +6,63 @@
 
     &__item {
         font-size: 14px;
+        z-index: 1;
 
         &:not(:last-child) {
             margin-right: 30px;
         }
+
     }
+
+    &__icon {
+        position: relative;
+        width: 270px;
+        height: 120px;
+        /*   padding: 30px 105px; */
+        margin-bottom: 30px;
+        border-radius: 4px;
+        border: 1px solid $primaryLight;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 73px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--hands::before {
+            background-image: url("../../images/icons/hands.svg");
+        }
+
+        &--phone::before {
+            background-image: url("../../images/icons/phone.svg");
+        }
+
+        &--man::before {
+            background-image: url("../../images/icons/man.svg");
+        }
+
+        &--workspace::before {
+            background-image: url("../../images/icons/workspace.svg");
+        }
+    }
+
+    .test::before {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
 
     &__item-title {
         font-weight: 700;
