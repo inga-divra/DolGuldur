@@ -18,7 +18,7 @@
     }
 
     &__member-content {
-        padding: 29px 15px 30px;
+        padding: 35px 32px 30px;
     }
 
     &__member-name {
@@ -28,5 +28,8 @@
     &__member-role {
         font-family: 'Roboto', sans-serif;
         color: $primaryLight;
+        margin-bottom: 16px;
     }
+
+
 }
