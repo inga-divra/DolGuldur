@@ -1,9 +1,39 @@
+.swiper-wrapper {
+    position: relative;
+
+
+    ::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($secondary, 0.6);
+        z-index: 1;
+    }
+}
+
+.swiper-slide {
+    margin-right: 0;
+}
+
+/* ************************* */
+
+.hero__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 .hero {
-    padding: 200px 0;
-    background-color: $primaryDark;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1600px;
+
 
     &__content {
         text-align: center;

@@ -1,5 +1,5 @@
 @import 'reset';
-/* @import 'libs'; */
+@import 'libs';
 @import 'vars';
 @import 'global';
 @import './components/header';
@@ -9,6 +9,10 @@
 @import './components/services';
 @import './components/team';
 @import './components/portfolio';
+@import './components/partners';
+
+
+
 
 .social {
     display: flex;

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The official website of digital agency DolGuldur</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap"
@@ -49,13 +52,29 @@
     </header>
 
     <main>
-        <section class="hero section">
-            <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">author's forge where
-                        <span class="hero__subtitle">your sites are created</span>
-                    </h1>
-                    <button class="btn" type="button">Go to order</button>
+        <section class="hero">
+            <div class="swiper">
+                <div class="container hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">author's forge where
+                            <span class="hero__subtitle">your sites are created</span>
+                        </h1>
+                        <button class="btn" type="button">Go to order</button>
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/slider1.jpg"
+                            alt="Close-up portrait of beautiful young blonde woman looking at camera">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider2.jpg"
+                            alt="View on the hand of woman who draws design frames with pencil in sketchbook">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider3.jpg"
+                            alt="Concentrated young man sitting at the table and using computer in dark room">
+                    </div>
                 </div>
             </div>
         </section>
@@ -288,6 +307,55 @@
                 </ul>
             </div>
         </section>
+        <section class="section partners">
+            <div class="container">
+                <h2 class="title">Our partners</h2>
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <a class="partners__link" href="#" target="_blank">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="../app/images/symbol-defs.svg#icon-rails"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#" target="_blank">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="../app/images/symbol-defs.svg#icon-googlepay"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#" target="_blank">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="../app/images/symbol-defs.svg#icon-playstation"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#" target="_blank">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="../app/images/symbol-defs.svg#icon-applepay"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#" target="_blank">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="../app/images/symbol-defs.svg#icon-npm"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link" href="#" target="_blank">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="../app/images/symbol-defs.svg#icon-ubereats"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer id="footer" class="footer">
@@ -343,6 +411,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.min.js"></script>
 </body>
 
