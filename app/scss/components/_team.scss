@@ -30,6 +30,49 @@
         color: $primaryLight;
         margin-bottom: 16px;
     }
+}
 
+/* social icons */
+.social {
+    display: flex;
+    justify-content: space-between;
 
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__link {
+
+        &::before {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 44px;
+            background-color: transparent;
+            border-radius: 50%;
+            transition: background-color 0.6s;
+        }
+
+        &:hover::before {
+            background-color: $accent;
+        }
+
+        &:hover .social__icon {
+            fill: $neutral;
+        }
+
+    }
+
+    &__icon {
+        fill: $primaryLight;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: fill 0.5s;
+    }
 }
