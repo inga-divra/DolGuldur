@@ -33,6 +33,7 @@
 
     .card {
         &__desc {
+            background-color: $neutral;
             padding: 20px 24px;
             border: 1px solid $primaryLight;
             border-top: none;
