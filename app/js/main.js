@@ -15,7 +15,7 @@ $(function () {
 
 
 //Swiper
-const swiper = new Swiper('.swiper', {
+/* const swiper = new Swiper('.swiper', {
 
     spaceBetween: 30,
     centeredSlides: true,
@@ -32,4 +32,4 @@ const swiper = new Swiper('.swiper', {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-});
+}); */

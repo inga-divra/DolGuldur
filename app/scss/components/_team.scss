@@ -33,6 +33,7 @@
 }
 
 /* social icons */
+
 .social {
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,6 @@
     }
 
     &__link {
-
 
         &::before {
             content: '';

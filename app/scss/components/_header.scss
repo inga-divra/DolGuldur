@@ -1,4 +1,5 @@
 .header {
+    padding-top: 8px;
     border-bottom: 1px solid $neutralLight;
 
     &__container {
@@ -28,11 +29,13 @@
 
     &__link {
         display: block;
-        padding: 32px 0 29px;
+        padding: 24px 4px 22px;
         position: relative;
-        transition: color 0.4s;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        transition: color 0.4s, border-color 0.4s;
 
-        &:before {
+        &::before {
             content: "";
             position: absolute;
             bottom: 0;
@@ -41,16 +44,36 @@
             height: 4px;
             background-color: $accent;
             border-radius: 2px;
-            transition: width 0.4s, left 0.4s;
+            transition: width 0.4s, left 0.4s, background-color 0.3s;
         }
 
         &:hover,
         &.current {
             color: $accent;
 
-            &:before {
+            &::before {
                 left: 0;
                 width: 100%;
+            }
+        }
+
+        &:active {
+            color: rgba($primary, 0.5);
+
+            &::before {
+                background-color: rgba($accent, 0.7);
+            }
+        }
+
+        &.current:active {
+            color: rgba($accent, 0.7);
+        }
+
+        &:focus {
+            border-color: $accent;
+
+            &::before {
+                display: none;
             }
         }
     }
@@ -59,50 +82,45 @@
         display: flex;
     }
 
-    &__contact-details {
-        color: $primaryLight;
-        line-height: 1.2;
+    &__contact-wrapper:not(:last-child) {
+        margin-right: 45px;
+    }
+
+    &__contact-wrapper {
         display: flex;
         align-items: center;
-        transition: color 0.4s;
+        padding: 4px;
+        font-size: 14px;
+        color: $primaryLight;
+        border: 1px solid transparent;
+        transition: color 0.3s;
 
         &:hover {
             color: $accent;
         }
 
-        &:before {
-            content: "";
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            margin-right: 10px;
-            transition: color 0.4s;
-
-            &:hover {
-                color: $accent;
-            }
+        &:hover .menu__contact-icon {
+            fill: $accent;
         }
 
-        &--envelope::before {
-            content: "";
-            width: 16px;
-            height: 12px;
-            background-image: url("../images/icons/envelope.svg");
+        &:focus {
+            border-color: $accent;
+            border-radius: 4px;
         }
 
-        &--phone::before {
-            content: "";
-            width: 10px;
-            height: 16px;
-            background-image: url("../images/icons/smartphone.svg");
+        &:active {
+            color: rgba($accent, 0.7);
         }
+
+        &:active .menu__contact-icon {
+            fill: rgba($accent, 0.7);
+        }
+
     }
 
-    &__contact-item:not(:last-child) {
-        margin-right: 45px;
-    }
-
-    &__contact-item {
-        position: relative;
+    &__contact-icon {
+        margin-right: 10px;
+        fill: $primaryLight;
+        transition: fill 0.3s;
     }
 }

@@ -17,34 +17,40 @@
     <header class="header">
         <div class="container header__container">
             <nav class="menu">
-                <a class="logo header__logo" href="index.html">
+                <a class="logo header__logo" href="#body">
                     <img class="logo__img" src="./images/logo.svg" alt="digital agency DolGuldur logo" width="189"
                         height="36">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="index.html">Home</a>
+                        <a class="menu__link current" href="index.html">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link current" href="works.html">Our Works</a>
+                        <a class="menu__link" href="works.html">Our Works</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="#">Contacts</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="menu__contact">
-                <li class="menu__contact-item ">
-                    <a class="menu__contact-details menu__contact-details--envelope" href="mailto:info@dolguldur.com">
+            <div class="menu__contact">
+                <div class="menu__contact-wrapper">
+                    <svg class="menu__contact-icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    <a class="menu__contact-link" href="mailto:info@dolguldur.com">
                         info@dolguldur.com
                     </a>
-                </li>
-                <li class="menu__contact-item ">
-                    <a class="menu__contact-details menu__contact-details--phone" href="tel:+380961111111">
+                </div>
+                <div class="menu__contact-wrapper">
+                    <svg class="menu__contact-icon" width="16" height="12">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    <a class="menu__contact-link" href="tel:+380961111111">
                         +38 096 111 11 11
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </header>
 
