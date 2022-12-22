@@ -37,6 +37,20 @@ body {
     padding: 10px 50px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s, outline-offset 0.3s;
+
+    &:hover {
+        box-shadow: 3px 3px 8px rgba($primaryDarker, 0.4);
+    }
+
+    &:focus {
+        outline-offset: 4px;
+        outline: 1px solid $accent;
+    }
+
+    &:active {
+        box-shadow: inset 3px 3px 8px rgba($primaryDarker, 0.4);
+    }
 }
 
 .sr-only {

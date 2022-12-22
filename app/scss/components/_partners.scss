@@ -22,10 +22,32 @@
             width: 170px;
             height: 92px;
             border: 1px solid $primaryLight;
-            transition: background-color 0.6s;
+            border-radius: 4px;
+            transition: border-color 0.3s, outline-offset 0.3s;
+        }
+
+        &:hover::before,
+        &:hover .partners__icon {
+            border-color: $accent;
+            fill: $accent;
+        }
+
+        &:focus::before {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+            border-color: $primaryLight;
+        }
+
+        &:focus .partners__icon {
+            fill: $primaryLight;
+        }
+
+        &:active::before,
+        &:active .partners__icon {
+            border-color: rgba($accent, 0.7);
+            fill: rgba($accent, 0.7);
         }
     }
-
 }
 
 .partners__icon {
@@ -33,5 +55,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: $primaryLight
+    fill: $primaryLight;
+    transition: fill 0.3s;
 }

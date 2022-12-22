@@ -47,6 +47,7 @@
 
     &__link {
 
+
         &::before {
             content: '';
             display: block;
@@ -54,7 +55,7 @@
             height: 44px;
             background-color: transparent;
             border-radius: 50%;
-            transition: background-color 0.6s;
+            transition: background-color 0.3s, outline-offset 0.3s box-shadow 0.3s;
         }
 
         &:hover::before {
@@ -65,6 +66,20 @@
             fill: $neutral;
         }
 
+        &:focus::before {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+            background-color: transparent;
+        }
+
+        &:active::before {
+            box-shadow: inset 4px 4px 4px rgba($primaryDarker, 0.25);
+            background-color: $accent;
+        }
+
+        &:active .social__icon {
+            fill: $neutral;
+        }
     }
 
     &__icon {

@@ -30,8 +30,25 @@
     }
 
     &__link {
-        display: block;
+        display: inline-block;
         color: $accentLight;
+        transition: color 0.5s;
+        margin-bottom: 9px;
+        transition: color 0.3s outline-offset 0.3s border-radius 0.3s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        &:active {
+            color: rgba($accentLight, 0.6);
+        }
     }
 
     &__link:not(:last-child) {
