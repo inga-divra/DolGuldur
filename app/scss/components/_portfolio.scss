@@ -31,24 +31,92 @@
         gap: 30px;
     }
 
-    .card {
-        &__desc {
-            background-color: $neutral;
-            padding: 20px 24px;
-            border: 1px solid $primaryLight;
-            border-top: none;
-            line-height: 2;
-        }
 
-        &__title {
-            font-size: 18px;
-            letter-spacing: 0.06em;
-            margin-bottom: 4px;
-        }
+}
 
-        &__text {
-            color: $primaryLight;
-        }
+.card {
+    margin-bottom: 30px;
+
+    &__inner {
+        position: relative;
     }
 
+    &__desc {
+        background-color: $neutral;
+        padding: 20px 24px;
+        border: 1px solid $primaryLight;
+        border-top: none;
+        line-height: 2;
+
+    }
+
+    &__title {
+        font-size: 18px;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        color: $primaryLight;
+    }
+
+    &:hover .overlay {
+        height: 100%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($accent, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+
+
+
+
+    &__text {
+        color: $neutral;
+        font-size: 18px;
+        padding: 63px 24px;
+    }
+}
+
+.wrapper {
+
+    position: relative;
+    z-index: 1;
+}
+
+.info {
+    background-color: black;
+    color: red;
+    padding: 20px 15px;
+}
+
+.image {
+    position: relative;
+}
+
+.contact-info {
+    padding: 50px 20px;
+    background-color: rgba($accent, 0.5);
+    color: azure;
+    text-transform: uppercase;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(100%);
+}
+
+.wrapper:hover .contact-info {
+    opacity: 1;
+    transform: none;
 }

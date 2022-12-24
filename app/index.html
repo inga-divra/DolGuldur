@@ -57,12 +57,20 @@
 
     <main>
         <section class="hero">
+            <!-- Modal -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal__btn" type="button" data-modal-close>Close</button>
+                    <p class="text">Tell about yourself and we will <span class="subtext">contact you</span>😸</p>
+                </div>
+            </div>
+            <!-- end of Modal -->
             <div class="container hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">author's forge where
                         <span class="hero__subtitle">your sites are created</span>
                     </h1>
-                    <button class="btn" type="button">Go to order</button>
+                    <button class="btn" type="button" data-modal-open>Go to order</button>
                 </div>
             </div>
             <div class="hero__bg">
