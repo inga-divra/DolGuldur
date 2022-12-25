@@ -11,7 +11,7 @@
     overflow: auto;
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease-in-out;
 
     &.is-hidden {
         opacity: 0;
@@ -37,21 +37,49 @@
     background-color: $neutral;
     box-shadow: 8px 8px 3px rgba($primaryDarker, 0.12);
     border-radius: 6px;
-    padding: 40px;
+    padding: 8px;
     max-width: 528px;
     transition-delay: 10s;
     transition: top 0ms ease-in-out 0ms,
         opacity 900ms ease-in-out 0ms,
         transform 90ms ease-in-out 0ms;
-
 }
 
 .modal__btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
-    border-radius: 4px;
-    color: white;
-    background-color: red;
+    width: 40px;
+    height: 40px;
+    background-color: $neutral;
+    border: 1px solid rgba($primaryDarker, 0.1);
+    border-radius: 50%;
+
+    &:hover .modal__btn-icon {
+        fill: $accent;
+    }
+
+    &:focus {
+        border-color: $accent;
+    }
+
+    &:focus .modal__btn-icon {
+        fill: $primaryDarker;
+    }
+
+    &:active {
+        border-color: transparent;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    &:active .modal__btn-icon {
+        fill: $accent;
+    }
+}
+
+.modal__btn-icon {
+    fill: $primaryDarker;
 }
 
 .text {
