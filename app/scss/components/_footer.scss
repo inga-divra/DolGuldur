@@ -47,7 +47,7 @@
         }
 
         &:active {
-            color: rgba($accentLight, 0.6);
+            opacity: 0.6;
         }
     }
 
@@ -56,20 +56,12 @@
     }
 }
 
-.social__link {
+.social__link--footer,
+.social__link--footer:focus {
 
-    &--footer::before {
-        background-color: rgba($neutral, 0.1);
-    }
-
-    &--footer:hover::before {
-        background-color: $accent;
-    }
+    background-color: rgba($neutral, 0.1);
 }
 
-.social__icon {
-
-    &--footer {
-        fill: $neutral;
-    }
+.social__icon--footer {
+    fill: $neutral;
 }

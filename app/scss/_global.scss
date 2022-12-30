@@ -32,6 +32,7 @@ body {
 .btn {
     color: $neutral;
     background-color: $accent;
+    line-height: 1;
     font-weight: 700;
     letter-spacing: 0.06em;
     padding: 10px 50px;
@@ -50,6 +51,31 @@ body {
 
     &:active {
         box-shadow: inset 3px 3px 8px rgba($primaryDarker, 0.4);
+    }
+
+    &.current {
+        color: $neutral;
+        background-color: $accent;
+        box-shadow: 1px 3px 1px rgba($primaryDarker, 0.1);
+    }
+
+    &--small {
+        padding: 11px 26px;
+        color: $primary;
+        background-color: $neutralLighter;
+        font-weight: 400;
+        box-shadow: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $accent;
+            color: $neutral;
+        }
+
+        &:focus {
+            opacity: 0.8;
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 .header {
-    padding-top: 8px;
+    padding: 8px 0 8px;
     border-bottom: 1px solid $neutralLight;
 
     &__container {
@@ -12,6 +12,24 @@
         margin-right: 89px;
     }
 }
+
+.logo {
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:focus {
+        outline: 1px solid $accent;
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}
+
 
 .menu {
     display: flex;
@@ -29,16 +47,15 @@
 
     &__link {
         display: block;
-        padding: 24px 4px 22px;
+        padding: 20px 0;
         position: relative;
-        border: 1px solid transparent;
         border-radius: 4px;
         transition: color 0.4s, border-color 0.4s;
 
         &::before {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: -8px;
             left: 50%;
             width: 0;
             height: 4px;
@@ -57,24 +74,14 @@
             }
         }
 
-        &:active {
-            color: rgba($primary, 0.5);
-
-            &::before {
-                background-color: rgba($accent, 0.7);
-            }
-        }
-
-        &.current:active {
-            color: rgba($accent, 0.7);
-        }
 
         &:focus {
-            border-color: $accent;
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+        }
 
-            &::before {
-                display: none;
-            }
+        &:active {
+            opacity: 0.5;
         }
     }
 
@@ -82,26 +89,27 @@
         display: flex;
     }
 
-    &__contact-wrapper:not(:last-child) {
-        margin-right: 45px;
-    }
-
-    &__contact-wrapper {
+    &__contact-link {
         display: flex;
         align-items: center;
         padding: 4px;
         font-size: 14px;
         color: $primaryLight;
         border: 1px solid transparent;
-        transition: color 0.3s;
+        transition: color 0.3s, border-color 0.3s;
+
+        &:not(:last-child) {
+            margin-right: 45px;
+        }
 
         &:hover {
             color: $accent;
+
+            .menu__contact-icon {
+                fill: $accent;
+            }
         }
 
-        &:hover .menu__contact-icon {
-            fill: $accent;
-        }
 
         &:focus {
             border-color: $accent;
@@ -109,11 +117,7 @@
         }
 
         &:active {
-            color: rgba($accent, 0.7);
-        }
-
-        &:active .menu__contact-icon {
-            fill: rgba($accent, 0.7);
+            opacity: 0.7;
         }
 
     }

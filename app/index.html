@@ -35,40 +35,24 @@
                 </ul>
             </nav>
             <div class="menu__contact">
-                <div class="menu__contact-wrapper">
+                <a class="menu__contact-link" href="mailto:info@dolguldur.com">
                     <svg class="menu__contact-icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
-                    <a class="menu__contact-link" href="mailto:info@dolguldur.com">
-                        info@dolguldur.com
-                    </a>
-                </div>
-                <div class="menu__contact-wrapper">
+                    info@dolguldur.com
+                </a>
+                <a class="menu__contact-link" href="tel:+380961111111">
                     <svg class="menu__contact-icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>
-                    <a class="menu__contact-link" href="tel:+380961111111">
-                        +38 096 111 11 11
-                    </a>
-                </div>
+                    +38 096 111 11 11
+                </a>
             </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <!-- Modal -->
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button class="modal__btn" type="button" data-modal-close>
-                        <svg class="modal__btn-icon" width="15" height="15">
-                            <use href="./images/symbol-defs.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                    <p class="text">Tell about yourself and we will <span class="subtext">contact you</span>😸</p>
-                </div>
-            </div>
-            <!-- end of Modal -->
             <div class="container hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">author's forge where
@@ -88,6 +72,21 @@
                     style="background-image:linear-gradient(90deg, rgba(47,48,58,0.6) 0%, rgba(47,48,58,0.6) 100%), url(./images/slider/slider3.jpg);">
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal__btn" type="button" data-modal-close>
+                        <svg class="modal__btn-icon" width="15" height="15">
+                            <use href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <p class="text">
+                        Tell about yourself and we will
+                        <span class="subtext">contact you</span>😸
+                    </p>
+                </div>
+            </div>
+            <!-- end of Modal -->
         </section>
         <section class="about section">
             <div class="container about__container">
@@ -406,8 +405,10 @@
                     </div>
                 </address>
             </div>
-            <div class="footer__social">
-                <p class="footer__subtitle">join</p>
+            <div class="footer__social-inner">
+                <p class="footer__subtitle">
+                    join
+                </p>
                 <ul class="social">
                     <li class="social__item">
                         <a class="social__link social__link--footer" href="#">

@@ -10,28 +10,12 @@
         margin-right: 10px;
     }
 
-    &__btn {
-        padding: 11px 26px;
-        background-color: $neutralLighter;
-        line-height: 1;
-        border-radius: 4px;
-        transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
-
-        &:hover,
-        &.current {
-            color: $neutral;
-            background-color: $accent;
-            box-shadow: 1px 3px 1px rgba($primaryDarker, 0.1);
-        }
-    }
 
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
-
-
 }
 
 .card {
@@ -39,6 +23,7 @@
 
     &__inner {
         position: relative;
+        overflow: hidden;
     }
 
     &__desc {
@@ -61,7 +46,7 @@
     }
 
     &:hover .overlay {
-        height: 100%;
+        transform: translateY(0);
     }
 }
 
@@ -73,50 +58,13 @@
     background-color: rgba($accent, 0.8);
     overflow: hidden;
     width: 100%;
-    height: 0;
-    transition: height 0.5s ease-in-out;
-
-
-
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
 
     &__text {
         color: $neutral;
         font-size: 18px;
         padding: 63px 24px;
     }
-}
-
-.wrapper {
-
-    position: relative;
-    z-index: 1;
-}
-
-.info {
-    background-color: black;
-    color: red;
-    padding: 20px 15px;
-}
-
-.image {
-    position: relative;
-}
-
-.contact-info {
-    padding: 50px 20px;
-    background-color: rgba($accent, 0.5);
-    color: azure;
-    text-transform: uppercase;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(100%);
-}
-
-.wrapper:hover .contact-info {
-    opacity: 1;
-    transform: none;
 }
