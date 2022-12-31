@@ -80,10 +80,52 @@
                             <use href="./images/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <p class="text">
-                        Tell about yourself and we will
-                        <span class="subtext">contact you</span>😸
-                    </p>
+
+                    <h2 class="modal__title">
+                        Tell about yourself and we will contact you
+                    </h2>
+                    <form class="form" action="">
+                        <label class="form__caption" for="">
+                            name
+                            <input type="text" class="form__input">
+                            <svg class="form__icon" width="12" height="12">
+                                <use href="./images/symbol-defs.svg#icon-client"></use>
+                            </svg>
+                        </label>
+
+
+                        <label class="form__caption" for="">
+                            phone
+                            <input type="text" class="form__input">
+                            <svg class="form__icon" width="13" height="13">
+                                <use href="./images/symbol-defs.svg#icon-handset"></use>
+                            </svg>
+                        </label>
+
+                        <label class="form__caption" for="">
+                            e-mail
+                            <input type="text" class="form__input">
+                            <svg class="form__icon" width="15" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope-dark"></use>
+                            </svg>
+                        </label>
+
+                        <label for="" class="form__caption">
+                            message
+                        </label>
+                        <textarea class=" form__input form__input--msg" name="msg"
+                            placeholder="Your message..."></textarea>
+                        <div class="form__checkbox">
+                            <input class="form__checkbox-input" type="checkbox" id="check">
+                            <label class="form__checkbox-text" for="check">
+                                I agree to the subscription and accept the
+                                <a class="form__checkbox-link" href="#">
+                                    Terms of use
+                                </a>
+                            </label>
+                        </div>
+                        <button class="btn form__btn" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
             <!-- end of Modal -->
