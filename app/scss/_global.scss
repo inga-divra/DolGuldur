@@ -91,3 +91,70 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+/* social icons */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background-color: transparent;
+        border-radius: 50%;
+        transition: background-color 0.3s, outline-offset 0.3s box-shadow 0.3s;
+
+        &:hover {
+            background-color: $accent;
+
+            .social__icon {
+                fill: $neutral;
+            }
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+            background-color: transparent;
+        }
+
+        &:active {
+            box-shadow: inset 4px 4px 4px rgba($primaryDarker, 0.25);
+            background-color: $accent;
+
+            .social__icon {
+                fill: $neutral;
+            }
+        }
+
+        &--footer,
+        &--footer:focus {
+            background-color: rgba($neutral, 0.1);
+
+            .social__icon {
+                fill: $neutral;
+            }
+        }
+    }
+}
+
+.social__icon {
+    fill: $primaryLight;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill 0.5s;
+}

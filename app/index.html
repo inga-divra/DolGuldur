@@ -55,10 +55,15 @@
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__content">
-                    <h1 class="hero__title">author's forge where
-                        <span class="hero__subtitle">your sites are created</span>
+                    <h1 class="hero__title">
+                        author's forge where
+                        <span class="hero__subtitle">
+                            your sites are created
+                        </span>
                     </h1>
-                    <button class="btn" type="button" data-modal-open>Go to order</button>
+                    <button class="btn" type="button" data-modal-open>
+                        Go to order
+                    </button>
                 </div>
             </div>
             <div class="hero__bg">
@@ -76,47 +81,43 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="modal__btn" type="button" data-modal-close>
+                        <span class="sr-only">Close popup-window</span>
                         <svg class="modal__btn-icon" width="15" height="15">
                             <use href="./images/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
-
                     <h2 class="modal__title">
                         Tell about yourself and we will contact you
                     </h2>
-                    <form class="form" action="">
-                        <label class="form__caption" for="">
+                    <form class="form" name="contactDolGuldur">
+                        <label class="form__caption" for="name">
                             name
-                            <input type="text" class="form__input">
+                            <input class="form__input" type="text" name="name" required>
                             <svg class="form__icon" width="12" height="12">
                                 <use href="./images/symbol-defs.svg#icon-client"></use>
                             </svg>
                         </label>
-
-
-                        <label class="form__caption" for="">
+                        <label class="form__caption" for="phone">
                             phone
-                            <input type="text" class="form__input">
+                            <input class="form__input" type="text" name="phone" required>
                             <svg class="form__icon" width="13" height="13">
                                 <use href="./images/symbol-defs.svg#icon-handset"></use>
                             </svg>
                         </label>
-
-                        <label class="form__caption" for="">
+                        <label class="form__caption" for="email" required>
                             e-mail
-                            <input type="text" class="form__input">
+                            <input class="form__input" type="text" name="email">
                             <svg class="form__icon" width="15" height="12">
                                 <use href="./images/symbol-defs.svg#icon-envelope-dark"></use>
                             </svg>
                         </label>
-
-                        <label for="" class="form__caption">
+                        <label class="form__caption" for="msg">
                             message
                         </label>
-                        <textarea class=" form__input form__input--msg" name="msg"
+                        <textarea class="form__input form__input--msg" name="msg"
                             placeholder="Your message..."></textarea>
                         <div class="form__checkbox">
-                            <input class="form__checkbox-input" type="checkbox" id="check">
+                            <input class="form__checkbox-input" type="checkbox" name="check">
                             <label class="form__checkbox-text" for="check">
                                 I agree to the subscription and accept the
                                 <a class="form__checkbox-link" href="#">
@@ -124,7 +125,9 @@
                                 </a>
                             </label>
                         </div>
-                        <button class="btn form__btn" type="submit">Submit</button>
+                        <button class="btn form__btn" type="submit">
+                            Submit
+                        </button>
                     </form>
                 </div>
             </div>
@@ -132,7 +135,9 @@
         </section>
         <section class="about section">
             <div class="container about__container">
-                <h2 class="sr-only">The main characteristics of Dolguldur digital agency</h2>
+                <h2 class="sr-only">
+                    The main characteristics of Dolguldur digital agency
+                </h2>
                 <ul class="about__items">
                     <li class="about__item ">
                         <div class="about__icon about__icon--hands"></div>
@@ -171,20 +176,28 @@
         </section>
         <section class="services section">
             <div class="container">
-                <h2 class="title">Our services</h2>
+                <h2 class="title">
+                    Our services
+                </h2>
                 <ul class="services__cards">
                     <li class="services__card">
-                        <h3 class="services__card-title">desktop apps</h3>
+                        <h3 class="services__card-title">
+                            desktop apps
+                        </h3>
                         <img class="services__card-img" src="./images/services/desctop_apps.jpg"
                             alt="pc and laptop on wooden desk" width="370" height="294">
                     </li>
                     <li class="services__card">
-                        <h3 class="services__card-title">mobile apps</h3>
+                        <h3 class="services__card-title">
+                            mobile apps
+                        </h3>
                         <img class="services__card-img" src="./images/services/mobile_apps.jpg"
                             alt="woman hands holding smartphone" width="370" height="294">
                     </li>
                     <li class="services__card">
-                        <h3 class="services__card-title">modern design</h3>
+                        <h3 class="services__card-title">
+                            modern design
+                        </h3>
                         <img class="services__card-img" src="./images/services/modern_design.jpg"
                             alt="box of colored pencils and hand holding pencil ready to start drawing" width="370"
                             height="294">
@@ -194,13 +207,17 @@
         </section>
         <section class="team section">
             <div class="container">
-                <h2 class="title">Our team</h2>
+                <h2 class="title">
+                    Our team
+                </h2>
                 <ul class="team__members">
                     <li class="team__member">
                         <img class="team__member-img" src="./images/team/paul_castanie.jpg"
                             alt="Paul Castanie Product designer" width="270" height="260">
                         <div class="team__content">
-                            <h3 class="team__member-name">Paul Castanie</h3>
+                            <h3 class="team__member-name">
+                                Paul Castanie
+                            </h3>
                             <p class="team__member-role">
                                 Product Designer
                             </p>
@@ -210,7 +227,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Paul Castanie instagram account</span>
+                                        <span class="sr-only">
+                                            Visit Paul Castanie instagram account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -218,7 +237,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Paul Castanie twitter account</span>
+                                        <span class="sr-only">
+                                            Visit Paul Castanie twitter account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -226,7 +247,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Paul Castanie facebook page</span>
+                                        <span class="sr-only">
+                                            Visit Paul Castanie facebook page
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -234,7 +257,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Paul Castanie Linkedin profile</span>
+                                        <span class="sr-only">
+                                            Visit Paul Castanie Linkedin profile
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
@@ -244,7 +269,9 @@
                         <img class="team__member-img" src="./images/team/joanna_nix.jpg"
                             alt="Joanna Nix Frontend Developer" width="270" height="260">
                         <div class="team__content">
-                            <h3 class="team__member-name">Joanna Nix</h3>
+                            <h3 class="team__member-name">
+                                Joanna Nix
+                            </h3>
                             <p class="team__member-role">
                                 Frontend Developer
                             </p>
@@ -254,7 +281,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Joanna Nix instagram account</span>
+                                        <span class="sr-only">
+                                            Visit Joanna Nix instagram account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -262,7 +291,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Joanna Nix twitter account</span>
+                                        <span class="sr-only">
+                                            Visit Joanna Nix twitter account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -270,7 +301,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Joanna Nix facebook page</span>
+                                        <span class="sr-only">
+                                            Visit Joanna Nix facebook page
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -278,7 +311,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Joanna Nix Linkedin profile</span>
+                                        <span class="sr-only">
+                                            Visit Joanna Nix Linkedin profile
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
@@ -288,7 +323,9 @@
                         <img class="team__member-img" src="./images/team/aldo_delara.jpg"
                             alt="Aldo Delara Marketing specialist" width="270" height="260">
                         <div class="team__content">
-                            <h3 class="team__member-name">Aldo Delara</h3>
+                            <h3 class="team__member-name">
+                                Aldo Delara
+                            </h3>
                             <p class="team__member-role">
                                 Marketing
                             </p>
@@ -298,7 +335,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Aldo Delara instagram account</span>
+                                        <span class="sr-only">
+                                            Visit Aldo Delara instagram account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -306,7 +345,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Aldo Delara twitter account</span>
+                                        <span class="sr-only">
+                                            Visit Aldo Delara twitter account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -314,7 +355,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Aldo Delara facebook page</span>
+                                        <span class="sr-only">
+                                            Visit Aldo Delara facebook page
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -322,7 +365,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Aldo Delara Linkedin profile</span>
+                                        <span class="sr-only">
+                                            Visit Aldo Delara Linkedin profile
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
@@ -332,7 +377,9 @@
                         <img class="team__member-img" src="./images/team/oladimeji_odunsi.jpg"
                             alt="Oladimeji Odunsi Ui designer" width="270" height="260">
                         <div class="team__content">
-                            <h3 class="team__member-name">Oladimeji Odunsi</h3>
+                            <h3 class="team__member-name">
+                                Oladimeji Odunsi
+                            </h3>
                             <p class="team__member-role">
                                 UI Designer
                             </p>
@@ -342,7 +389,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Oladimeji Odunsi instagram account</span>
+                                        <span class="sr-only">
+                                            Visit Oladimeji Odunsi instagram account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -350,7 +399,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Oladimeji Odunsi twitter account</span>
+                                        <span class="sr-only">
+                                            Visit Oladimeji Odunsi twitter account
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -358,7 +409,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Oladimeji Odunsi facebook page</span>
+                                        <span class="sr-only">
+                                            Visit Oladimeji Odunsi facebook page
+                                        </span>
                                     </a>
                                 </li>
                                 <li class="social__item">
@@ -366,7 +419,9 @@
                                         <svg class="social__icon" width="22" height="22">
                                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                                         </svg>
-                                        <span class="sr-only">Visit Oladimeji Odunsi Linkedin profile</span>
+                                        <span class="sr-only">
+                                            Visit Oladimeji Odunsi Linkedin profile
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
@@ -377,14 +432,18 @@
         </section>
         <section class="section partners">
             <div class="container">
-                <h2 class="title">Our partners</h2>
+                <h2 class="title">
+                    Our partners
+                </h2>
                 <ul class="partners__list">
                     <li class="partners__item">
                         <a class="partners__link" href="#" target="_blank">
                             <svg class="partners__icon" width="60" height="60">
                                 <use href="./images/symbol-defs.svg#icon-rails"></use>
                             </svg>
-                            <span class="sr-only">Visit Ruby on Rails official website</span>
+                            <span class="sr-only">
+                                Visit Ruby on Rails official website
+                            </span>
                         </a>
                     </li>
                     <li class="partners__item">
@@ -392,7 +451,9 @@
                             <svg class="partners__icon" width="60" height="60">
                                 <use href="./images/symbol-defs.svg#icon-googlepay"></use>
                             </svg>
-                            <span class="sr-only">Visit Google Pay official website</span>
+                            <span class="sr-only">
+                                Visit Google Pay official website
+                            </span>
                         </a>
                     </li>
                     <li class="partners__item">
@@ -400,7 +461,9 @@
                             <svg class="partners__icon" width="60" height="60">
                                 <use href="./images/symbol-defs.svg#icon-playstation"></use>
                             </svg>
-                            <span class="sr-only">Visit Playstation official website</span>
+                            <span class="sr-only">
+                                Visit Playstation official website
+                            </span>
                         </a>
                     </li>
                     <li class="partners__item">
@@ -408,7 +471,9 @@
                             <svg class="partners__icon" width="60" height="60">
                                 <use href="./images/symbol-defs.svg#icon-applepay"></use>
                             </svg>
-                            <span class="sr-only">Visit Apple Pay official website</span>
+                            <span class="sr-only">
+                                Visit Apple Pay official website
+                            </span>
                         </a>
                     </li>
                     <li class="partners__item">
@@ -416,7 +481,9 @@
                             <svg class="partners__icon" width="60" height="60">
                                 <use href="./images/symbol-defs.svg#icon-npm"></use>
                             </svg>
-                            <span class="sr-only">Visit NPM official website</span>
+                            <span class="sr-only">
+                                Visit NPM official website
+                            </span>
                         </a>
                     </li>
                     <li class="partners__item">
@@ -424,7 +491,9 @@
                             <svg class="partners__icon" width="60" height="60">
                                 <use href="./images/symbol-defs.svg#icon-ubereats"></use>
                             </svg>
-                            <span class="sr-only">Visit Uder Eats food delivery official website</span>
+                            <span class="sr-only">
+                                Visit Uder Eats food delivery official website
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -442,8 +511,12 @@
                         14 Green St., Belmont, Boston. USA
                     </p>
                     <div class="address__inner">
-                        <div><a class="address__link" href="mailto:info@dolguldur.com">info@dolguldur.com</a></div>
-                        <div><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></div>
+                        <div>
+                            <a class="address__link" href="mailto:info@dolguldur.com">info@dolguldur.com</a>
+                        </div>
+                        <div>
+                            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </div>
                     </div>
                 </address>
             </div>
@@ -457,7 +530,9 @@
                             <svg class="social__icon social__icon--footer" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
-                            <span class="sr-only">Visit digital agency DolGuldur instagram account</span>
+                            <span class="sr-only">
+                                Visit digital agency DolGuldur instagram account
+                            </span>
                         </a>
                     </li>
                     <li class="social__item">
@@ -465,7 +540,9 @@
                             <svg class="social__icon social__icon--footer" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
-                            <span class="sr-only">Visit digital agency DolGuldur twitter account</span>
+                            <span class="sr-only">
+                                Visit digital agency DolGuldur twitter account
+                            </span>
                         </a>
                     </li>
                     <li class="social__item">
@@ -473,7 +550,9 @@
                             <svg class="social__icon social__icon--footer" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
-                            <span class="sr-only">Visit digital agency DolGuldur facebook page</span>
+                            <span class="sr-only">
+                                Visit digital agency DolGuldur facebook page
+                            </span>
                         </a>
                     </li>
                     <li class="social__item">
@@ -481,10 +560,26 @@
                             <svg class="social__icon social__icon--footer" width="20" height="20">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
-                            <span class="sr-only">Visit digital agency DolGuldur Linkedin profile</span>
+                            <span class="sr-only">
+                                Visit digital agency DolGuldur Linkedin profile
+                            </span>
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer__sub">
+                <p class="footer__subtitle">
+                    subscribe
+                </p>
+                <label class="footer__sub-caption" for="email">
+                    <input class="footer__sub-input" type="text" name="email" placeholder="E-mail">
+                </label>
+                <button class="btn footer__sub-btn">
+                    Subscribe
+                    <svg class="footer__sub-icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-leaf"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer>
