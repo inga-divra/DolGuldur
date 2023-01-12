@@ -291,12 +291,8 @@
                         14 Green St., Belmont, Boston. USA
                     </p>
                     <div class="address__inner">
-                        <div>
-                            <a class="address__link" href="mailto:info@dolguldur.com">info@dolguldur.com</a>
-                        </div>
-                        <div>
-                            <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </div>
+                        <a class="address__link" href="mailto:info@dolguldur.com">info@dolguldur.com</a>
+                        <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </div>
                 </address>
             </div>
@@ -347,19 +343,24 @@
                     </li>
                 </ul>
             </div>
+
             <div class="footer__sub">
                 <p class="footer__subtitle">
                     subscribe
                 </p>
-                <label class="footer__sub-caption" for="email">
-                    <input class="footer__sub-input" type="text" name="email" placeholder="E-mail">
-                </label>
-                <button class="btn footer__sub-btn">
-                    Subscribe
-                    <svg class="footer__sub-icon" width="24" height="24">
-                        <use href="./images/symbol-defs.svg#icon-leaf"></use>
-                    </svg>
-                </button>
+                <form class="sub-form">
+                    <label class="sub-form__caption">
+                        <span class="sr-only">Please, enter your email to subscribe</span>
+                        <input class="sub-form__input" type="email" name="email" placeholder="E-mail" required>
+                    </label>
+                    <button class="btn sub-form__btn" type="button">
+                        Subscribe
+                        <svg class="sub-form__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-leaf"></use>
+                        </svg>
+                    </button>
+                </form>
+
             </div>
         </div>
     </footer>

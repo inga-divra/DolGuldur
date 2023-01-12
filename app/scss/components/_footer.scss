@@ -25,41 +25,6 @@
         margin-right: 93px;
     }
 
-    &__sub-input {
-        margin-right: 12px;
-        padding: 15px 16px;
-        width: 358px;
-        background-color: transparent;
-        color: $neutral;
-        border: 1px solid rgba($neutral, 0.3);
-        border-radius: 4px;
-
-        &::placeholder {
-            color: rgba($neutral, 0.3);
-        }
-
-        &:hover::placeholder {
-            color: $accent;
-        }
-
-        &:focus {
-            outline: 1px solid $accent;
-            outline-offset: 4px;
-        }
-    }
-
-    &__sub-btn {
-        position: relative;
-        padding: 10px 72px 10px 39px;
-        line-height: 1.9;
-    }
-
-    &__sub-icon {
-        position: absolute;
-        top: 10px;
-        right: 28px;
-        fill: $neutral;
-    }
 }
 
 .address {
@@ -72,7 +37,6 @@
     &__link {
         display: inline-block;
         color: $accentLight;
-        transition: color 0.5s;
         margin-bottom: 9px;
         transition: color 0.3s outline-offset 0.3s border-radius 0.3s;
 
@@ -93,5 +57,51 @@
 
     &__link:not(:last-child) {
         margin-bottom: 9px;
+    }
+}
+
+.sub-form {
+    display: flex;
+    max-width: 570px;
+    width: 100%;
+
+    &__caption {
+        display: block;
+    }
+
+    &__input {
+        display: block;
+        width: 358px;
+        margin-right: 12px;
+        padding: 15px 16px;
+        background-color: transparent;
+        color: $neutral;
+        border: 1px solid rgba($neutral, 0.3);
+        border-radius: 4px;
+
+        &::placeholder {
+            color: rgba($neutral, 0.3);
+        }
+
+        &:hover::placeholder {
+            color: $accent;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+        }
+    }
+
+    &__btn {
+        padding: 10px 28px 10px 39px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__icon {
+        margin-left: 20px;
+        fill: $neutral;
     }
 }
