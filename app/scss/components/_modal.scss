@@ -33,6 +33,7 @@
     border-radius: 6px;
     padding: 40px;
     max-width: 528px;
+    width: 100%;
     text-align: center;
     transition: transform 500ms ease-in-out 0ms;
 
@@ -40,40 +41,40 @@
         font-size: 20px;
         margin-bottom: 11px;
     }
-}
 
-.modal__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 40px;
-    height: 40px;
-    background-color: $neutral;
-    border: 1px solid rgba($primaryDarker, 0.1);
-    border-radius: 50%;
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 40px;
+        height: 40px;
+        background-color: $neutral;
+        border: 1px solid rgba($primaryDarker, 0.1);
+        border-radius: 50%;
 
-    &:hover .modal__btn-icon {
-        fill: $accent;
-    }
+        &:hover .modal__btn-icon {
+            fill: $accent;
+        }
 
-    &:focus {
-        border-color: $accent;
-    }
+        &:focus {
+            border-color: $accent;
+        }
 
-    &:focus .modal__btn-icon {
-        fill: $primaryDarker;
-    }
+        &:focus .modal__btn-icon {
+            fill: $primaryDarker;
+        }
 
-    &:active {
-        border-color: transparent;
-        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.12);
-    }
+        &:active {
+            border-color: transparent;
+            box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.12);
+        }
 
-    &:active .modal__btn-icon {
-        fill: $accent;
+        &:active .modal__btn-icon {
+            fill: $accent;
+        }
     }
 }
 
@@ -95,7 +96,7 @@
         color: $primaryLight;
         margin-bottom: 4px;
 
-        &--msg {
+        &:last-child {
             margin-bottom: 20px;
         }
     }
@@ -124,7 +125,6 @@
 
         &--msg {
             padding: 12px 16px;
-            resize: none;
             min-height: 120px;
 
             &::placeholder {

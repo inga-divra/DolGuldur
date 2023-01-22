@@ -38,7 +38,7 @@
         display: inline-block;
         color: $accentLight;
         margin-bottom: 9px;
-        transition: color 0.3s outline-offset 0.3s border-radius 0.3s;
+        transition: color 0.3s, outline-offset 0.3s, border-radius 0.3s;
 
         &:hover {
             color: $accent;
