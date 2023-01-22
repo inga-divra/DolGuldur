@@ -151,10 +151,8 @@
     }
 
     &__accept {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-bottom: 40px;
+        margin-left: 14px;
     }
 
     &__accept-checkbox {
@@ -199,6 +197,7 @@
     }
 
     &__accept-text {
+        display: flex;
         font-size: 14px;
         color: $primaryLight;
     }
