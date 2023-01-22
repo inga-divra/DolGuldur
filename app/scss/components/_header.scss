@@ -14,7 +14,7 @@
 }
 
 .logo {
-    transition: opacity 0.4s, outline 0.3s, outline-offset 0.3s;
+    transition: opacity 0.4s, outline-offset 0.3s;
 
     &:hover {
         opacity: 0.5;
