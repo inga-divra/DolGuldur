@@ -54,6 +54,7 @@
         background-color: $neutral;
         border: 1px solid rgba($primaryDarker, 0.1);
         border-radius: 50%;
+        transition: border-color 0.3s, box-shadow 0.3s;
 
         &:hover .modal__btn-icon {
             fill: $accent;
@@ -80,6 +81,7 @@
 
 .modal__btn-icon {
     fill: $primaryDarker;
+    transition: fill 0.3s;
 }
 
 .form {
