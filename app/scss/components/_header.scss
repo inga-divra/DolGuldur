@@ -14,6 +14,7 @@
 }
 
 .logo {
+    transition: opacity 0.4s, outline 0.3s, outline-offset 0.3s;
 
     &:hover {
         opacity: 0.5;
@@ -50,7 +51,7 @@
         padding: 20px 0;
         position: relative;
         border-radius: 4px;
-        transition: color 0.4s, border-color 0.4s;
+        transition: color 0.4s, border-color 0.4s, opacity 0.4s;
 
         &::before {
             content: "";
@@ -96,7 +97,7 @@
         font-size: 14px;
         color: $primaryLight;
         border: 1px solid transparent;
-        transition: color 0.3s, border-color 0.3s;
+        transition: color 0.3s, border-color 0.3s, opacity 0.3s;
 
         &:not(:last-child) {
             margin-right: 45px;
