@@ -38,7 +38,7 @@
         display: inline-block;
         color: $accentLight;
         margin-bottom: 9px;
-        transition: color 0.3s, outline-offset 0.3s, border-radius 0.3s;
+        transition: color 0.3s, outline-offset 0.3s, opacity 0.4s;
 
         &:hover {
             color: $accent;
@@ -78,9 +78,11 @@
         color: $neutral;
         border: 1px solid rgba($neutral, 0.3);
         border-radius: 4px;
+        transition: outline-offset 0.3s, opacity 0.4s;
 
         &::placeholder {
             color: rgba($neutral, 0.3);
+            transition: color 0.3s;
         }
 
         &:hover::placeholder {
@@ -90,6 +92,10 @@
         &:focus {
             outline: 1px solid $accent;
             outline-offset: 4px;
+        }
+
+        &:active {
+            opacity: 0.6;
         }
     }
 
