@@ -22,7 +22,7 @@
         height: 92px;
         border: 1px solid $primaryLight;
         border-radius: 4px;
-        transition: border-color 0.3s, outline-offset 0.3s;
+        transition: border-color 0.3s, outline-offset 0.3s, opacity 0.4s;
 
 
         &:hover,
@@ -43,7 +43,6 @@
             .partners__icon {
                 fill: $primaryLight;
             }
-
         }
 
         &:active {
