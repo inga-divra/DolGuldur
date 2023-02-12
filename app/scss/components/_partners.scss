@@ -2,28 +2,34 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 
     &__item {
         position: relative;
     }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
 
     &__link {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 16px 55px;
-        width: 170px;
+        width: 210px;
         height: 92px;
         border: 1px solid $primaryLight;
         border-radius: 4px;
         transition: border-color 0.3s, outline-offset 0.3s, opacity 0.4s;
 
+        @media(min-width:768px) {
+            width: 226px;
+        }
+
+        @media(min-width:1200px) {
+            width: 170px;
+        }
 
         &:hover,
         &:active {
