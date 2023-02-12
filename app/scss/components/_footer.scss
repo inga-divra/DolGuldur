@@ -6,23 +6,75 @@
 
     &__container {
         display: flex;
+        flex-wrap: wrap;
+
+        @media(min-width: 1200px) {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
     }
 
     &__contact {
-        margin-right: 63px;
+        width: 100%;
+
+        @media(min-width:768px) {
+            width: 50%;
+        }
+
+        @media(min-width: 1200px) {
+            width: 100%;
+            margin-right: 63px;
+        }
     }
 
     &__logo {
         margin-bottom: 23px;
     }
 
+    &__logo .logo__img {
+        margin: 0 auto;
+
+        @media(min-width:1200px) {
+            margin: 0;
+        }
+    }
+
     &__subtitle {
         text-transform: uppercase;
         margin-bottom: 19px;
+
+        @media(min-width:1200px) {
+            text-align: left;
+        }
     }
 
     &__social-inner {
-        margin-right: 93px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+
+        @media(min-width:768px) {
+            width: 50%;
+        }
+
+        @media(min-width:1200px) {
+            align-items: flex-start;
+            margin-right: 93px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__sub {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media(min-width:1200px) {
+            align-items: start;
+        }
     }
 
 }
@@ -31,7 +83,18 @@
     font-family: 'Roboto', sans-serif;
 
     &__text {
+        text-align: center;
         margin-bottom: 9px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media(min-width:1200px) {
+            align-items: flex-start;
+        }
     }
 
     &__link {
@@ -62,23 +125,35 @@
 
 .sub-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 570px;
     width: 100%;
 
+    @media(min-width:1200px) {
+        flex-direction: row;
+        align-items: start;
+    }
+
     &__caption {
         display: block;
+        margin-bottom: 20px;
     }
 
     &__input {
         display: block;
+        //width: 450px;
         width: 358px;
-        margin-right: 12px;
         padding: 15px 16px;
         background-color: transparent;
         color: $neutral;
         border: 1px solid rgba($neutral, 0.3);
         border-radius: 4px;
         transition: outline-offset 0.3s, opacity 0.4s;
+
+        @media(min-width:1200px) {
+            margin-right: 12px;
+        }
 
         &::placeholder {
             color: rgba($neutral, 0.3);
