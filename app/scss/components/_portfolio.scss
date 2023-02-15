@@ -3,18 +3,47 @@
     &__filter {
         display: flex;
         justify-content: center;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 40px;
+
+        /*  &::after {
+            content: '';
+            flex: auto;
+
+        } */
+
+        @media(min-width:768px) {
+            margin-bottom: 30px;
+        }
+
+        @media(min-width:1200px) {
+            margin-bottom: 50px;
+        }
     }
 
-    &__filter-item:not(:last-child) {
+    &__filter-item {}
+
+    /* &__filter-item:not(:last-child) {
         margin-right: 10px;
-    }
+    } */
 
 
     &__content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+
+        @media(min-width:768px) {
+            opacity: 0.8;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(min-width:1200px) {
+            opacity: 1;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 
