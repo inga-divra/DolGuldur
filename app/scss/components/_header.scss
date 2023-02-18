@@ -1,5 +1,4 @@
 .header {
-    display: none;
     padding: 8px 0 8px;
     border-bottom: 1px solid $neutralLight;
 
@@ -39,8 +38,14 @@
     align-items: center;
     letter-spacing: 0.02em;
 
+
     &__list {
         display: flex;
+        align-items: center;
+
+        @media(min-width: 768px) {
+            margin-right: 89px;
+        }
     }
 
     &__item:not(:last-child) {
@@ -64,6 +69,7 @@
             background-color: $accent;
             border-radius: 2px;
             transition: width 0.4s, left 0.4s, background-color 0.3s;
+
         }
 
         &:hover,
@@ -89,6 +95,12 @@
 
     &__contact {
         display: flex;
+        flex-direction: column;
+
+
+        @media(min-width:1200px) {
+            flex-direction: row;
+        }
     }
 
     &__contact-link {
@@ -100,9 +112,12 @@
         border: 1px solid transparent;
         transition: color 0.3s, border-color 0.3s, opacity 0.3s;
 
-        &:not(:last-child) {
-            margin-right: 45px;
+        @media(min-width:1200px) {
+            &:not(:last-child) {
+                margin-right: 45px;
+            }
         }
+
 
         &:hover {
             color: $accent;
