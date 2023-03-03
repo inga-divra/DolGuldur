@@ -1,8 +1,12 @@
 .header {
     height: 60px;
-    // padding: 8px 0 8px;
     padding: 12px 0;
     border-bottom: 1px solid $neutralLight;
+
+    @media(min-width:768px) {
+        height: auto;
+        padding: 8px 0 8px;
+    }
 
     &__container {
         display: flex;
@@ -33,9 +37,7 @@
     }
 }
 
-
 .menu {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,25 +45,59 @@
 
 
     &__list {
-        //display: flex;
-        display: none;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        transform: translateY(-110%);
+        padding: 50px 40px;
+        width: 100vw;
+        height: 796px;
+        text-align: center;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        background-color: $neutral;
+        transition: transform 0.3s;
 
         @media(min-width: 768px) {
+            display: flex;
+            align-items: center;
             margin-right: 89px;
         }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 50px;
+    &__list.active {
+        transform: translateY(0);
+    }
+
+    &__list.active .menu__link::before {
+        display: none;
+    }
+
+
+    &__item {
+
+        @media(min-width:768px) {
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+
     }
 
     &__link {
         display: block;
-        padding: 20px 0;
+        padding: 17px 0;
+        font-size: 40px;
         position: relative;
         border-radius: 4px;
         transition: color 0.4s, border-color 0.4s, opacity 0.4s;
+
+        @media(min-width:768px) {
+            padding: 20px 0;
+            font-size: 16px;
+        }
 
         &::before {
             content: "";
@@ -73,7 +109,6 @@
             background-color: $accent;
             border-radius: 2px;
             transition: width 0.4s, left 0.4s, background-color 0.3s;
-
         }
 
         &:hover,
@@ -86,7 +121,6 @@
             }
         }
 
-
         &:focus {
             outline: 1px solid $accent;
             outline-offset: 4px;
@@ -98,10 +132,13 @@
     }
 
     &__contact {
-        //display: flex;
         display: none;
-        flex-direction: column;
 
+
+        @media(min-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
 
         @media(min-width:1200px) {
             flex-direction: row;
@@ -156,13 +193,17 @@
     display: block;
     width: 44px;
     height: 44px;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
     border-radius: 3px;
     transition: background-color 0.3s, border-color 0.3s;
+
+    @media(min-width:768px) {
+        display: none;
+    }
 
     &:hover {
         cursor: pointer;
