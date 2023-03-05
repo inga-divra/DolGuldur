@@ -61,9 +61,9 @@
         transition: transform 0.3s;
 
         @media(min-width: 768px) {
-            display: flex;
             align-items: center;
             margin-right: 89px;
+
         }
     }
 
@@ -83,7 +83,6 @@
                 margin-right: 50px;
             }
         }
-
     }
 
     &__link {
