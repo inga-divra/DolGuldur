@@ -112,7 +112,12 @@ body {
 
 .social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+    @media(min-width:768px) {
+        justify-content: space-between;
+    }
+
 
     &__item {
         position: relative;

@@ -17,6 +17,10 @@
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
     }
 
+    &__member-img {
+        height: auto;
+    }
+
     &__content {
         background-color: $neutral;
         padding: 35px 32px 30px;
