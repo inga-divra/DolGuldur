@@ -11,13 +11,6 @@ $(function () {
     infinite: true,
   });
 
-  $('.menu a, .logo, .header__link').on('click', function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1500);
-  });
-
   $('.hamburger').on('click', function () {
     $('.menu__list').toggleClass('active');
     $('.body').toggleClass('lock');

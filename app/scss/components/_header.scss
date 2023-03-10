@@ -52,7 +52,7 @@
         transform: translateY(-110%);
         padding: 50px 40px;
         width: 100vw;
-        height: 796px;
+        height: 100vh;
         text-align: center;
         left: 0;
         top: 0;
@@ -290,5 +290,13 @@
         left: -12px;
         bottom: 0;
     }
+}
 
+/* Mobile menu */
+
+.mobile-menu {
+
+    @media(min-width:768px) {
+        display: none;
+    }
 }
