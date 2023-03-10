@@ -37,11 +37,11 @@
     text-align: center;
     transition: transform 500ms ease-in-out 0ms;
 
-    @media(min-width:480px) {
+    @media (min-width:480px) {
         padding: 40px;
     }
 
-    @media(min-width:1200px) {
+    @media (min-width:1200px) {
         max-width: 528px;
     }
 
@@ -50,7 +50,7 @@
         text-align: left;
         margin-bottom: 11px;
 
-        @media(min-width:480px) {
+        @media (min-width:480px) {
             font-size: 20px;
             text-align: center;
         }
@@ -169,7 +169,7 @@
         margin-bottom: 40px;
 
 
-        @media(min-width:1200px) {
+        @media (min-width:1200px) {
             margin-left: 14px;
         }
 
@@ -223,11 +223,11 @@
             font-size: 12px;
             color: $primaryLight;
 
-            @media(min-width:480px) {
+            @media (min-width:480px) {
                 flex-direction: row;
             }
 
-            @media(min-width:1200px) {
+            @media (min-width:1200px) {
                 font-size: 14px;
             }
         }

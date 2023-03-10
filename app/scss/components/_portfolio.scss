@@ -2,23 +2,20 @@
 
     &__filter {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 40px;
 
-
-
-        @media(min-width:768px) {
+        @media (min-width:768px) {
             margin-bottom: 30px;
+            justify-content: center;
         }
 
-        @media(min-width:1200px) {
+        @media (min-width:1200px) {
             margin-bottom: 50px;
         }
     }
 
-    &__filter-item {}
 
 
     &__content {
@@ -27,13 +24,11 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
 
-        @media(min-width:768px) {
-            opacity: 0.8;
+        @media (min-width:768px) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media(min-width:1200px) {
-            opacity: 1;
+        @media (min-width:1200px) {
             grid-template-columns: repeat(3, 1fr);
         }
     }

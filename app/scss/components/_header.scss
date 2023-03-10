@@ -3,7 +3,7 @@
     padding: 12px 0;
     border-bottom: 1px solid $neutralLight;
 
-    @media(min-width:768px) {
+    @media (min-width:768px) {
         height: auto;
         padding: 8px 0 8px;
     }
@@ -60,7 +60,7 @@
         background-color: $neutral;
         transition: transform 0.3s;
 
-        @media(min-width: 768px) {
+        @media (min-width: 768px) {
             align-items: center;
             margin-right: 89px;
 
@@ -78,7 +78,7 @@
 
     &__item {
 
-        @media(min-width:768px) {
+        @media (min-width:768px) {
             &:not(:last-child) {
                 margin-right: 50px;
             }
@@ -93,7 +93,7 @@
         border-radius: 4px;
         transition: color 0.4s, border-color 0.4s, opacity 0.4s;
 
-        @media(min-width:768px) {
+        @media (min-width:768px) {
             padding: 20px 0;
             font-size: 16px;
         }
@@ -134,12 +134,12 @@
         display: none;
 
 
-        @media(min-width:768px) {
+        @media (min-width:768px) {
             display: flex;
             flex-direction: column;
         }
 
-        @media(min-width:1200px) {
+        @media (min-width:1200px) {
             flex-direction: row;
         }
     }
@@ -153,11 +153,13 @@
         border: 1px solid transparent;
         transition: color 0.3s, border-color 0.3s, opacity 0.3s;
 
-        @media(min-width:1200px) {
-            &:not(:last-child) {
+        &:not(:last-child) {
+
+            @media (min-width:1200px) {
                 margin-right: 45px;
             }
         }
+
 
 
         &:hover {
@@ -200,7 +202,7 @@
     border-radius: 3px;
     transition: background-color 0.3s, border-color 0.3s;
 
-    @media(min-width:768px) {
+    @media (min-width:768px) {
         display: none;
     }
 
@@ -210,12 +212,15 @@
 
     &:focus {
         border-color: $accent;
-    }
 
-    &:focus .hamburger__line,
-    &:focus .hamburger__line::after,
-    &:focus .hamburger__line::before {
-        background-color: $primaryLight;
+        .hamburger__line {
+            background-color: $primaryLight;
+
+            &::after,
+            &::before {
+                background-color: $primaryLight;
+            }
+        }
     }
 
     &:active {
@@ -296,7 +301,7 @@
 
 .mobile-menu {
 
-    @media(min-width:768px) {
+    @media (min-width:768px) {
         display: none;
     }
 }
