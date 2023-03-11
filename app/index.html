@@ -134,32 +134,35 @@
                         Tell about yourself and we will contact you
                     </h2>
                     <form class="form-order" name="contactDolGuldur">
-                        <label class="form-order__caption">
-                            Name
-                            <input class="form-order__input" type="text" name="name" required>
-                            <svg class="form-order__icon" width="12" height="12">
-                                <use href="./images/symbol-defs.svg#icon-client"></use>
-                            </svg>
-                        </label>
-                        <label class="form-order__caption">
-                            Phone
-                            <input class="form-order__input" type="tel" name="phone" required>
-                            <svg class="form-order__icon" width="13" height="13">
-                                <use href="./images/symbol-defs.svg#icon-handset"></use>
-                            </svg>
-                        </label>
-                        <label class="form-order__caption">
-                            E-mail
-                            <input class="form-order__input" type="email" name="email" required>
-                            <svg class="form-order__icon" width="15" height="12">
-                                <use href="./images/symbol-defs.svg#icon-envelope-dark"></use>
-                            </svg>
-                        </label>
-                        <label class="form-order__caption">
-                            Message
-                            <textarea class="form-order__input form-order__input--msg" name="msg"
-                                placeholder="Your message..."></textarea>
-                        </label>
+                        <div class="form-order__details">
+                            <label class="form-order__caption form-order__caption--left">
+                                Name
+                                <input class="form-order__input" type="text" name="name" required>
+                                <svg class="form-order__icon" width="12" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-client"></use>
+                                </svg>
+                            </label>
+                            <label class="form-order__caption form-order__caption--left">
+                                Phone
+                                <input class="form-order__input" type="tel" name="phone" required>
+                                <svg class="form-order__icon" width="13" height="13">
+                                    <use href="./images/symbol-defs.svg#icon-handset"></use>
+                                </svg>
+                            </label>
+                            <label class="form-order__caption form-order__caption--left">
+                                E-mail
+                                <input class="form-order__input" type="email" name="email" required>
+                                <svg class="form-order__icon" width="15" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-envelope-dark"></use>
+                                </svg>
+                            </label>
+                            <label class="form-order__caption form-order__caption--right">
+                                Message
+                                <textarea class="form-order__input form-order__input--msg" name="msg"
+                                    placeholder="Your message..."></textarea>
+                            </label>
+                        </div>
+
                         <div class="form-accept">
                             <label class="form-accept__text">
                                 <input class="form-accept__checkbox" type="checkbox" name="check" required>
