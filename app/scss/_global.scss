@@ -21,7 +21,7 @@ body {
 .section {
     padding: 60px 0;
 
-    @media (min-width:1200px) {
+    @media (min-width: 1200px) {
         padding: 94px 0;
     }
 
@@ -29,6 +29,11 @@ body {
 
 .logo {
     display: block;
+    max-width: 116px;
+
+    @media (min-width: 1200px) {
+        max-width: 149px;
+    }
 }
 
 .title {
