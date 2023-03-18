@@ -52,6 +52,7 @@
     }
 
     &__item {
+        position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -59,40 +60,104 @@
         width: 100%;
         height: 60vh;
 
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%);
+        }
 
         &--1 {
-            background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%),
-                url('../images/slider/1slider-mob.jpg');
+            background-image: url('../../images/slider/1slider-mob.jpg');
 
             @media (min-device-pixel-ratio:2),
             (min-resolution:192dpi),
             (min-resolution:2dppx) {
-                background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%),
-                    url('../images/slider/1slider-mob2x.jpg');
+                background-image: url('../../images/slider/1slider-mob2x.jpg');
             }
 
-
             @media (min-width:768px) {
-                background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%),
-                    url('../images/slider/1slider-tab.jpg');
+                background-image: url('../../images/slider/1slider-tab.jpg');
 
                 @media (min-device-pixel-ratio:2),
                 (min-resolution:192dpi),
                 (min-resolution:2dppx) {
-                    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%),
-                        url('../images/slider/1slider-tab2x.jpg');
+                    background-image: url('../../images/slider/1slider-tab2x.jpg');
                 }
             }
 
             @media (min-width:1200px) {
-                background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%),
-                    url('../images/slider/1slider-desk.jpg');
+                background-image: url('../../images/slider/1slider-desk.jpg');
 
                 @media (min-device-pixel-ratio:2),
                 (min-resolution:192dpi),
                 (min-resolution:2dppx) {
-                    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.6) 0%, rgba(47, 48, 58, 0.6) 100%),
-                        url('../images/slider/1slider-desk2x.jpg');
+                    background-image: url('../../images/slider/1slider-desk2x.jpg');
+                }
+            }
+        }
+
+        &--2 {
+            background-image: url('../../images/slider/2slider-mob.jpg');
+
+            @media (min-device-pixel-ratio:2),
+            (min-resolution:192dpi),
+            (min-resolution:2dppx) {
+                background-image: url('../../images/slider/2slider-mob2x.jpg');
+            }
+
+            @media (min-width: 768px) {
+                background-image: url('../../images/slider/2slider-tab.jpg');
+
+                @media (min-device-pixel-ratio:2),
+                (min-resolution:192dpi),
+                (min-resolution:2dppx) {
+                    background-image: url('../../images/slider/2slider-tab2x.jpg');
+                }
+            }
+
+            @media (min-width: 1200px) {
+                background-image: url('../../images/slider/2slider-desk.jpg');
+
+                @media (min-device-pixel-ratio:2),
+                (min-resolution:192dpi),
+                (min-resolution:2dppx) {
+                    background-image: url('../../images/slider/2slider-desk2x.jpg');
+                }
+            }
+        }
+
+        &--3 {
+            background-image: url('../../images/slider/3slider-mob.jpg');
+
+            @media (min-device-pixel-ratio:2),
+            (min-resolution:192dpi),
+            (min-resolution:2dppx) {
+                background-image: url('../../images/slider/3slider-mob2x.jpg');
+            }
+
+            @media (min-width: 768px) {
+                background-image: url('../../images/slider/3slider-tab.jpg');
+
+                @media (min-device-pixel-ratio:2),
+                (min-resolution:192dpi),
+                (min-resolution:2dppx) {
+                    background-image: url('../../images/slider/3slider-tab3x.jpg');
+                }
+            }
+
+            @media (min-width: 1200px) {
+                background-image: url('../../images/slider/3slider-desk.jpg');
+
+                @media (min-device-pixel-ratio:2),
+                (min-resolution:192dpi),
+                (min-resolution:2dppx) {
+                    background-image: url('../../images/slider/3slider-desk2x.jpg');
                 }
             }
         }
