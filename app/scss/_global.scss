@@ -29,11 +29,7 @@ body {
 
 .logo {
     display: block;
-    max-width: 116px;
 
-    @media (min-width: 1200px) {
-        max-width: 149px;
-    }
 }
 
 .title {
