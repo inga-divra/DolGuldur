@@ -3,7 +3,7 @@
     padding: 12px 0;
     border-bottom: 1px solid $neutralLight;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         height: auto;
         padding: 8px 0 8px;
     }
@@ -60,7 +60,7 @@
 
     &__item {
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             &:not(:last-child) {
                 margin-right: 50px;
             }
@@ -75,7 +75,7 @@
         border-radius: 4px;
         transition: color 0.4s, border-color 0.4s, opacity 0.4s;
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             padding: 20px 0;
             font-size: 16px;
         }
@@ -116,12 +116,12 @@
         display: none;
 
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             display: flex;
             flex-direction: column;
         }
 
-        @media (min-width:1200px) {
+        @media (min-width: 1200px) {
             flex-direction: row;
         }
     }
@@ -137,7 +137,7 @@
 
         &:not(:last-child) {
 
-            @media (min-width:1200px) {
+            @media (min-width: 1200px) {
                 margin-right: 45px;
             }
         }
@@ -184,7 +184,7 @@
     border-radius: 3px;
     transition: background-color 0.3s, border-color 0.3s;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         display: none;
     }
 
@@ -305,7 +305,7 @@
         display: none;
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         display: none;
     }
 

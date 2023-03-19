@@ -23,11 +23,11 @@
         border-radius: 4px;
         transition: border-color 0.3s, outline-offset 0.3s, opacity 0.4s;
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             width: 226px;
         }
 
-        @media (min-width:1200px) {
+        @media (min-width: 1200px) {
             width: 170px;
         }
 
@@ -39,7 +39,6 @@
                 fill: $accent;
             }
         }
-
 
         &:focus {
             outline: 1px solid $accent;

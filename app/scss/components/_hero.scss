@@ -42,11 +42,11 @@
         text-align: center;
         margin-bottom: 30px;
 
-        @media (min-width:480px) {
+        @media (min-width: 480px) {
             font-size: 24px;
         }
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             font-size: 44px;
         }
     }
@@ -80,27 +80,27 @@
             background-image: url('../../images/slider/1slider-mob.jpg');
 
             @media (min-device-pixel-ratio:2),
-            (min-resolution:192dpi),
-            (min-resolution:2dppx) {
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 background-image: url('../../images/slider/1slider-mob2x.jpg');
             }
 
-            @media (min-width:768px) {
+            @media (min-width: 768px) {
                 background-image: url('../../images/slider/1slider-tab.jpg');
 
                 @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                     background-image: url('../../images/slider/1slider-tab2x.jpg');
                 }
             }
 
-            @media (min-width:1200px) {
+            @media (min-width: 1200px) {
                 background-image: url('../../images/slider/1slider-desk.jpg');
 
                 @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                     background-image: url('../../images/slider/1slider-desk2x.jpg');
                 }
             }
@@ -110,8 +110,8 @@
             background-image: url('../../images/slider/2slider-mob.jpg');
 
             @media (min-device-pixel-ratio:2),
-            (min-resolution:192dpi),
-            (min-resolution:2dppx) {
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 background-image: url('../../images/slider/2slider-mob2x.jpg');
             }
 
@@ -119,8 +119,8 @@
                 background-image: url('../../images/slider/2slider-tab.jpg');
 
                 @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                     background-image: url('../../images/slider/2slider-tab2x.jpg');
                 }
             }
@@ -129,8 +129,8 @@
                 background-image: url('../../images/slider/2slider-desk.jpg');
 
                 @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                     background-image: url('../../images/slider/2slider-desk2x.jpg');
                 }
             }
@@ -140,8 +140,8 @@
             background-image: url('../../images/slider/3slider-mob.jpg');
 
             @media (min-device-pixel-ratio:2),
-            (min-resolution:192dpi),
-            (min-resolution:2dppx) {
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
                 background-image: url('../../images/slider/3slider-mob2x.jpg');
             }
 
@@ -149,8 +149,8 @@
                 background-image: url('../../images/slider/3slider-tab.jpg');
 
                 @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                     background-image: url('../../images/slider/3slider-tab3x.jpg');
                 }
             }
@@ -159,8 +159,8 @@
                 background-image: url('../../images/slider/3slider-desk.jpg');
 
                 @media (min-device-pixel-ratio:2),
-                (min-resolution:192dpi),
-                (min-resolution:2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                     background-image: url('../../images/slider/3slider-desk2x.jpg');
                 }
             }

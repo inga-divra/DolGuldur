@@ -12,11 +12,11 @@
         font-size: 14px;
         z-index: 1;
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             width: 354px;
         }
 
-        @media (min-width:992px) {
+        @media (min-width: 992px) {
             width: 270px;
         }
     }
@@ -66,7 +66,7 @@
         text-transform: uppercase;
         margin-bottom: 9px;
 
-        @media (min-width:768px) {
+        @media (min-width: 768px) {
             text-align: left;
         }
     }
