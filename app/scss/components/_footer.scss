@@ -134,7 +134,11 @@
     max-width: 570px;
     width: 100%;
 
-    @media (min-width:1200px) {
+    @media (min-width: 768px) {
+        max-width: 450px;
+    }
+
+    @media (min-width: 1200px) {
         flex-direction: row;
     }
 
@@ -145,6 +149,7 @@
 
         @media (min-width:1200px) {
             margin-bottom: 0;
+            margin-right: 12px;
         }
     }
 
