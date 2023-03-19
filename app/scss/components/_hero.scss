@@ -1,12 +1,16 @@
-.slick-slider .slick-track {
+/* .slick-slider .slick-track {
     height: 60vh;
-}
+} */
 
 .hero {
     position: relative;
     background-color: $primaryDarker;
     max-width: 1600px;
     margin: 0 auto;
+
+    &__bg {
+        height: 60vh;
+    }
 
     &__container {
         position: absolute;
