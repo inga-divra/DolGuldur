@@ -5,6 +5,11 @@
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 40px;
+        justify-content: center;
+
+        @media (min-width: 480px) {
+            justify-content: space-between;
+        }
 
         @media (min-width:768px) {
             margin-bottom: 30px;
