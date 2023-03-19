@@ -142,8 +142,6 @@
             }
         }
 
-
-
         &:hover {
             color: $accent;
 
@@ -189,7 +187,15 @@
     }
 
     &:hover {
-        cursor: pointer;
+
+        .hamburger__line {
+            background-color: $accent;
+
+            &::after,
+            &::before {
+                background-color: $accent;
+            }
+        }
     }
 
     &:focus {
@@ -215,7 +221,7 @@
         position: relative;
         width: 26px;
         height: 2px;
-        background-color: $accent;
+        background-color: $primaryLight;
         transition: width 0.5s;
 
         &::after,
@@ -225,7 +231,7 @@
             position: absolute;
             width: 26px;
             height: 2px;
-            background-color: $accent;
+            background-color: $primaryLight;
             left: 0;
             transition: transform 0.5s, left 0.5s;
         }
