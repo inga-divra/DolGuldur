@@ -45,6 +45,10 @@
         overflow: hidden;
     }
 
+    &__img {
+        height: auto;
+    }
+
     &__desc {
         background-color: $neutral;
         padding: 20px 24px;
