@@ -9,6 +9,15 @@
 
     &__item {
         position: relative;
+        width: calc((100% - 30px) / 2);
+
+        @media (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 3);
+        }
+
+        @media (min-width: 1200px) {
+            width: calc((100% - 5 * 30px) / 6);
+        }
     }
 
 
@@ -17,19 +26,10 @@
         justify-content: center;
         align-items: center;
         padding: 16px 55px;
-        width: 210px;
         height: 92px;
         border: 1px solid $primaryLight;
         border-radius: 4px;
         transition: border-color 0.3s, outline-offset 0.3s, opacity 0.4s;
-
-        @media (min-width: 768px) {
-            width: 226px;
-        }
-
-        @media (min-width: 1200px) {
-            width: 170px;
-        }
 
         &:hover,
         &:active {
