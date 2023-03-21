@@ -10,6 +10,10 @@
 
     &__bg {
         height: 60vh;
+
+        @media (max-width: 968px) and (orientation: landscape) {
+            height: 100vh;
+        }
     }
 
     &__container {
@@ -49,6 +53,10 @@
         @media (min-width: 768px) {
             font-size: 44px;
         }
+
+        @media (max-width: 1200px) and (orientation: landscape) {
+            font-size: 36px;
+        }
     }
 
     &__subtitle {
@@ -63,6 +71,10 @@
         max-width: 1600px;
         width: 100%;
         height: 60vh;
+
+        @media (max-width: 968px) and (orientation: landscape) {
+            height: 100vh;
+        }
 
         &::before {
             content: '';
