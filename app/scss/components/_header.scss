@@ -9,9 +9,12 @@
     }
 
     &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__logo {
@@ -45,9 +48,10 @@
 
 .menu {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     letter-spacing: 0.02em;
-    margin: 0 auto;
+
 
 
     &__list {
