@@ -10,32 +10,26 @@
 
     &__member {
         width: 100%;
-        margin-bottom: 30px;
+        max-width: 450px;
+        margin: 0 auto 30px;
         text-align: center;
         line-height: 1.2;
         border-radius: 0 0 4px 4px;
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
 
-        @media (min-width: 480px) {
-            width: 60%;
-        }
-
         @media (min-width: 768px) {
             width: calc((100% - 30px) / 2);
+            margin-bottom: 0;
         }
 
         @media (min-width: 1200px) {
             width: calc((100% - 3 * 30px) / 4);
         }
 
-
-        @media (max-width: 768px) and (orientation:landscape) {
-            width: calc((90% - 15px) / 2);
-        }
     }
 
     &__member-img {
-        height: auto;
+        object-fit: cover;
     }
 
     &__content {

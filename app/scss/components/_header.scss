@@ -377,7 +377,23 @@
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         font-weight: 500;
+        border-radius: 4px;
         color: $accent;
+        transition: background-color 0.3s, outline-offset 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus,
+        &:active {
+            outline: 1px solid #ec3c05;
+            outline-offset: 4px;
+        }
+
+        &:active {
+            color: $primaryLight
+        }
     }
 
 }
