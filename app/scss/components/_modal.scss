@@ -311,8 +311,7 @@
         &__link {
             color: $accent;
             text-decoration: underline;
-            transition: opacity 0.3s, outline-offset 0.3s, opacity 0.4s;
-
+            transition: opacity 0.3s, outline-offset 0.3s, border-radius 0.3s;
         }
 
         &:hover {

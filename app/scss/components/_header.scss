@@ -218,6 +218,15 @@
     &:active {
         box-shadow: inset 3px 3px 3px rgba($primaryDark, 0.12);
         border-radius: 6px;
+
+        .hamburger__line {
+            background-color: $accent;
+
+            &::after,
+            &::before {
+                background-color: $accent;
+            }
+        }
     }
 
     &__line {
@@ -279,14 +288,14 @@
                 &::after {
                     transform: rotate(43deg);
                     width: 22px;
-                    left: -12px;
+                    left: -11px;
                     top: 0;
                 }
 
                 &::before {
                     transform: rotate(-43deg);
                     width: 22px;
-                    left: -12px;
+                    left: -11px;
                     bottom: 0;
                 }
             }
@@ -395,5 +404,4 @@
             color: $primaryLight
         }
     }
-
 }
