@@ -1028,9 +1028,29 @@ body.lock {
 .hamburger__line::before {
   bottom: -8px;
 }
-.hamburger.active:hover {
+.hamburger.active {
   border-radius: 50%;
   border-color: rgba(0, 0, 0, 0.1);
+}
+.hamburger.active .hamburger__line {
+  width: 0;
+}
+.hamburger.active .hamburger__line::after {
+  background-color: #000;
+  transform: rotate(43deg);
+  width: 22px;
+  left: -11px;
+  top: 0;
+}
+.hamburger.active .hamburger__line::before {
+  background-color: #000;
+  transform: rotate(-43deg);
+  width: 22px;
+  left: -11px;
+  bottom: 0;
+}
+.hamburger.active:hover .hamburger__line::after, .hamburger.active:hover .hamburger__line::before {
+  background-color: #EC3C05;
 }
 .hamburger.active:focus {
   border-color: #EC3C05;
@@ -1038,23 +1058,11 @@ body.lock {
 .hamburger.active:focus .hamburger__line::after, .hamburger.active:focus .hamburger__line::before {
   background-color: #000;
 }
-.hamburger.active.active {
-  border-radius: 50%;
+.hamburger.active:focus:active .hamburger__line {
+  background-color: #EC3C05;
 }
-.hamburger.active.active .hamburger__line {
-  width: 0;
-}
-.hamburger.active.active .hamburger__line::after {
-  transform: rotate(43deg);
-  width: 22px;
-  left: -11px;
-  top: 0;
-}
-.hamburger.active.active .hamburger__line::before {
-  transform: rotate(-43deg);
-  width: 22px;
-  left: -11px;
-  bottom: 0;
+.hamburger.active:focus:active .hamburger__line::after, .hamburger.active:focus:active .hamburger__line::before {
+  background-color: #EC3C05;
 }
 
 /* Mobile menu */
@@ -1140,7 +1148,7 @@ body.lock {
   opacity: 0.7;
 }
 .mobile-menu__social-link:focus, .mobile-menu__social-link:active {
-  outline: 1px solid #ec3c05;
+  outline: 1px solid #EC3C05;
   outline-offset: 4px;
 }
 .mobile-menu__social-link:active {
