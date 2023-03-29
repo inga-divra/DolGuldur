@@ -25,11 +25,14 @@
         @media (min-width: 1200px) {
             width: calc((100% - 3 * 30px) / 4);
         }
-
     }
 
     &__member-img {
         object-fit: cover;
+
+        @media (min-width: 1200px) {
+            height: auto;
+        }
     }
 
     &__content {
